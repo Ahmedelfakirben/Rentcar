@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite dev",
-        "build": "vite build",
+        "build": "vinxi build",
         "build:dev": "vite build --mode development",
         "preview": "vite preview",
         "lint": "eslint .",
@@ -81,9 +81,11 @@
         "eslint-plugin-react-hooks": "^5.2.0",
         "eslint-plugin-react-refresh": "^0.4.20",
         "globals": "^15.15.0",
+        "nitropack": "^2.13.4",
         "prettier": "^3.7.3",
         "typescript": "^5.8.3",
         "typescript-eslint": "^8.56.1",
+        "vinxi": "^0.5.11",
         "vite": "^7.3.1"
     }
 }
