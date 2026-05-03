@@ -20,7 +20,7 @@ const server = createServer((req, res) => {
   // 301 Redirect for the secondary domain
   if (host.includes('2s1mrentcar.com')) {
     res.writeHead(301, {
-      Location: `https://tetouanrentcar.ma${req.url}`
+      Location: `https://rentcartetouan.ma${req.url}`
     });
     res.end();
     return;
