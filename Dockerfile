@@ -13,7 +13,8 @@ RUN npm install
 COPY . .
 
 # Build the project using the Node.js preset for Nitro
-ENV NODE_OPTIONS="--max-old-space-size=2048"
+# Adjusted memory limit to 1.5GB to leave room for the OS/Docker on small VPS
+ENV NODE_OPTIONS="--max-old-space-size=1536"
 RUN npx cross-env NITRO_PRESET=node-server npm run build
 
 # Stage 2: Runtime
