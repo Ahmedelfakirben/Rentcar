@@ -134,6 +134,11 @@ export function Cars() {
   return (
     <section id="voitures" className="pt-32 pb-16 sm:pt-40 sm:pb-20 lg:pt-48 lg:pb-28 relative overflow-hidden">
       <div className="absolute inset-0 z-0 bg-[#0B1D2A]">
+        <img 
+          src="/flota.png" 
+          alt="2S1M Rent Car Fleet Background" 
+          className="w-full h-full object-cover opacity-60"
+        />
 
         {/* Lighter, more subtle gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/40 z-0" />
