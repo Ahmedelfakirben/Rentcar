@@ -182,7 +182,7 @@ export function Cars() {
           ) : (
             cars.map((car, idx) => (
               <FadeIn key={car.id} delay={idx * 100}>
-                <article className="group relative bg-[#132F45]/90 border border-orange/10 rounded-[2rem] overflow-hidden hover:border-orange/40 hover:-translate-y-3 transition-all duration-500 h-full flex flex-col shadow-2xl hover:shadow-orange/20">
+                <article className="group relative bg-black/80 border border-white/5 rounded-[2rem] overflow-hidden hover:border-orange/40 hover:-translate-y-3 transition-all duration-500 h-full flex flex-col shadow-2xl hover:shadow-orange/20">
                   <div className="relative aspect-[16/10] overflow-hidden bg-secondary/20 shrink-0">
                     <img
                       src={car.img}
@@ -211,12 +211,12 @@ export function Cars() {
                       <div className="w-12 h-1 bg-orange/30 rounded-full group-hover:w-20 transition-all duration-500" />
                     </div>
 
-                    <div className="grid grid-cols-3 gap-4 mb-8 p-4 rounded-2xl bg-secondary/20 border border-orange/5 w-full">
+                    <div className="grid grid-cols-3 gap-4 mb-8 p-4 rounded-2xl bg-black/60 border border-white/5 w-full">
                       <div className="flex flex-col items-center justify-center gap-1">
                         <CalendarIcon size={14} className="text-orange/70" />
                         <span className="text-[10px] font-bold text-muted-foreground">{car.year || "—"}</span>
                       </div>
-                      <div className="flex flex-col items-center justify-center gap-1 border-x border-orange/10">
+                      <div className="flex flex-col items-center justify-center gap-1 border-x border-white/5">
                         <FuelIcon size={14} className="text-orange/70" />
                         <span className="text-[10px] font-bold text-muted-foreground uppercase">
                           {car.fuel === 'diesel' ? t.fleet.diesel : car.fuel === 'essence' ? t.fleet.essence : (car.fuel || "—")}
