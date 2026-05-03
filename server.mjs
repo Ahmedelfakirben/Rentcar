@@ -1,5 +1,5 @@
 import { createServer } from 'node:http';
-import { createAdapter } from '@whatwg-node/server';
+import { createServerAdapter } from '@whatwg-node/server';
 import sirv from 'sirv';
 import app from './dist/server/server.js';
 
@@ -12,7 +12,7 @@ const assets = sirv('dist/client', {
 });
 
 // The TanStack Start SSR handler (adapted for Node HTTP)
-const ssrHandler = createAdapter(app.fetch);
+const ssrHandler = createServerAdapter(app.fetch);
 
 const server = createServer((req, res) => {
   // First try serving static files
