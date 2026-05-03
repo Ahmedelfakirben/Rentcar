@@ -15,6 +15,17 @@ const assets = sirv('dist/client', {
 const ssrHandler = createServerAdapter(app.fetch);
 
 const server = createServer((req, res) => {
+  const host = req.headers.host || '';
+  
+  // 301 Redirect for the secondary domain
+  if (host.includes('2s1mrentcar.com')) {
+    res.writeHead(301, {
+      Location: `https://tetouanrentcar.ma${req.url}`
+    });
+    res.end();
+    return;
+  }
+
   // First try serving static files
   assets(req, res, () => {
     // If not found, fallback to SSR handler

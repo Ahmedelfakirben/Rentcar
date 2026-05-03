@@ -84,9 +84,9 @@ export function FooterLinks() {
                     <Phone size={16} className="text-orange" />
                     06 60 29 28 21
                   </a>
-                  <a href="tel:0618399606" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-orange transition-colors">
+                  <a href="tel:0531333293" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-orange transition-colors">
                     <Phone size={16} className="text-orange" />
-                    06 18 39 96 06
+                    05 31 33 32 93
                   </a>
                 </div>
               </li>
@@ -97,15 +97,21 @@ export function FooterLinks() {
                 </a>
               </li>
               <li>
-                <a href="https://www.rentacartetouan.ma" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-orange transition-colors">
+                <a href="https://tetouanrentcar.ma" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-orange transition-colors">
                   <Globe size={16} className="text-orange" />
-                  rentacartetouan.ma
+                  tetouanrentcar.ma
                 </a>
               </li>
               <li>
-                <a href="https://www.2s1mrentcar.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-orange transition-colors">
+                <a href="https://2s1mrentcar.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-orange transition-colors">
                   <Globe size={16} className="text-orange" />
                   2s1mrentcar.com
+                </a>
+              </li>
+              <li>
+                <a href="mailto:2s1mrentcar@gmail.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-orange transition-colors">
+                  <MessageCircle size={16} className="text-orange" />
+                  2s1mrentcar@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground pt-2">

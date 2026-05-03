@@ -134,11 +134,7 @@ export function Cars() {
   return (
     <section id="voitures" className="pt-32 pb-16 sm:pt-40 sm:pb-20 lg:pt-48 lg:pb-28 relative overflow-hidden">
       <div className="absolute inset-0 z-0 bg-[#0B1D2A]">
-        <img 
-          src="/flota.png" 
-          alt="2S1M Rent Car Fleet" 
-          className="w-full h-full object-cover opacity-90"
-        />
+
         {/* Lighter, more subtle gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/40 z-0" />
         <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black to-transparent z-0" />
@@ -181,7 +177,7 @@ export function Cars() {
           ) : (
             cars.map((car, idx) => (
               <FadeIn key={car.id} delay={idx * 100}>
-                <article className="group relative bg-card/40 backdrop-blur-md border border-orange/10 rounded-[2rem] overflow-hidden hover:border-orange/40 hover:-translate-y-3 transition-all duration-500 h-full flex flex-col shadow-2xl hover:shadow-orange/20">
+                <article className="group relative bg-[#132F45]/90 border border-orange/10 rounded-[2rem] overflow-hidden hover:border-orange/40 hover:-translate-y-3 transition-all duration-500 h-full flex flex-col shadow-2xl hover:shadow-orange/20">
                   <div className="relative aspect-[16/10] overflow-hidden bg-secondary/20 shrink-0">
                     <img
                       src={car.img}
@@ -190,7 +186,7 @@ export function Cars() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute top-4 left-4 flex flex-col gap-2">
-                      <span className="px-3 py-1.5 text-[10px] font-bold tracking-widest uppercase bg-black/60 backdrop-blur-md text-orange border border-orange/20 rounded-lg">
+                      <span className="px-3 py-1.5 text-[10px] font-bold tracking-widest uppercase bg-black/80 text-orange border border-orange/20 rounded-lg">
                         {car.type}
                       </span>
                     </div>
@@ -271,7 +267,7 @@ export function Cars() {
                       }
                       return p;
                     })].map((photo, i) => (
-                      <div key={i} className="w-24 h-16 shrink-0 rounded-lg overflow-hidden border-2 border-white/20 hover:border-orange transition-colors cursor-pointer shadow-lg bg-black/40 backdrop-blur-sm">
+                      <div key={i} className="w-24 h-16 shrink-0 rounded-lg overflow-hidden border-2 border-white/20 hover:border-orange transition-colors cursor-pointer shadow-lg bg-black/60">
                         <img src={photo} className="w-full h-full object-cover" />
                       </div>
                     ))}
@@ -279,7 +275,7 @@ export function Cars() {
                 )}
               </div>
               
-              <div className="w-full lg:w-2/5 p-8 flex flex-col bg-black/80 backdrop-blur-2xl">
+              <div className="w-full lg:w-2/5 p-8 flex flex-col bg-black/95">
                 <div className="mb-8">
                   <DialogHeader className="p-0 text-left mb-4">
                     <DialogTitle className="text-3xl font-black">{selectedCar.name}</DialogTitle>
@@ -304,7 +300,7 @@ export function Cars() {
                 
                 <h3 className="font-bold text-sm uppercase tracking-widest mb-4 text-orange/80">{t.fleet.availability}</h3>
                 
-                <div className="flex justify-center bg-black/60 backdrop-blur-md rounded-2xl p-4 border border-orange/20 mb-8 relative overflow-hidden group/cal shadow-[0_0_30px_rgba(255,153,0,0.05)]">
+                <div className="flex justify-center bg-black/80 rounded-2xl p-4 border border-orange/20 mb-8 relative overflow-hidden group/cal shadow-[0_0_30px_rgba(255,153,0,0.05)]">
                   <div className="absolute inset-0 bg-gradient-to-br from-orange/20 via-orange/5 to-transparent opacity-100 pointer-events-none" />
                   <div className="absolute -top-10 -left-10 w-24 h-24 bg-orange/20 blur-2xl rounded-full pointer-events-none" />
                   <Calendar
