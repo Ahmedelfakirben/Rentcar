@@ -62,7 +62,7 @@ export function FooterLinks() {
                     <Link 
                       to={l.to as any} 
                       hash={l.hash}
-                      params={{ lang }}
+                      params={{ lang } as any}
                       className="text-sm text-muted-foreground hover:text-orange flex items-center gap-2 transition-colors group"
                     >
                       <ChevronRight size={12} className="text-orange/40 group-hover:text-orange transition-colors" />
