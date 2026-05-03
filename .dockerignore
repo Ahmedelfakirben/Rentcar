@@ -9,3 +9,15 @@ Dockerfile
 .dockerignore
 npm-debug.log
 README.md
+Location project
+*.png
+*.jpg
+*.jpeg
+*.mp4
+!public/*.png
+!public/*.jpg
+!public/*.jpeg
+!public/*.mp4
+!src/assets/*.png
+!src/assets/*.jpg
+!src/assets/*.jpeg
