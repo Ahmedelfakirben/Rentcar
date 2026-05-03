@@ -37,14 +37,14 @@ export function Contact() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <FadeIn delay={300} className="h-full">
-            <div className="block h-full p-8 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group">
+            <div className="block h-full p-6 lg:p-4 xl:p-6 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group">
               <div className="w-12 h-12 mx-auto rounded-full border border-orange/40 flex items-center justify-center text-orange mb-4 group-hover:bg-orange group-hover:text-background transition-all">
                 <Phone size={22} />
               </div>
               <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">{c.phone}</p>
               <div className="space-y-1">
-                <a href="tel:0660292821" className="block text-lg font-semibold text-foreground hover:text-orange transition-colors">06 60 29 28 21</a>
-                <a href="tel:0531333293" className="block text-lg font-semibold text-foreground hover:text-orange transition-colors">05 31 33 32 93</a>
+                <a href="tel:0660292821" className="block text-base font-semibold text-foreground hover:text-orange transition-colors whitespace-nowrap">06 60 29 28 21</a>
+                <a href="tel:0531333293" className="block text-base font-semibold text-foreground hover:text-orange transition-colors whitespace-nowrap">05 31 33 32 93</a>
               </div>
             </div>
           </FadeIn>
@@ -54,23 +54,23 @@ export function Contact() {
               href="https://wa.me/212660292821"
               target="_blank"
               rel="noopener noreferrer"
-              className="block h-full p-8 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group"
+              className="block h-full p-6 lg:p-4 xl:p-6 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group"
             >
               <div className="w-12 h-12 mx-auto rounded-full border border-orange/40 flex items-center justify-center text-orange mb-4 group-hover:bg-orange group-hover:text-background transition-all">
                 <MessageCircle size={22} />
               </div>
               <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">{c.wa}</p>
-              <p className="text-lg font-semibold text-foreground" dir="ltr">+212 6 60 29 28 21</p>
+              <p className="text-base font-semibold text-foreground whitespace-nowrap" dir="ltr">+212 6 60 29 28 21</p>
             </a>
           </FadeIn>
 
           <FadeIn delay={500} className="h-full sm:col-span-2 lg:col-span-1">
-            <div className="block h-full p-8 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group">
+            <div className="block h-full p-6 lg:p-4 xl:p-6 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group">
               <div className="w-12 h-12 mx-auto rounded-full border border-orange/40 flex items-center justify-center text-orange mb-4 group-hover:bg-orange group-hover:text-background transition-all">
                 <MapPin size={22} />
               </div>
               <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">{c.address}</p>
-              <p className="text-sm font-medium text-foreground leading-relaxed uppercase">
+              <p className="text-xs lg:text-[11px] xl:text-xs font-medium text-foreground leading-relaxed uppercase break-words">
                 RUE 14 AV MOHAMED BENOUNA<br/>QUARTIER BOUJARAH, TÉTOUAN
               </p>
             </div>
@@ -79,13 +79,13 @@ export function Contact() {
           <FadeIn delay={600} className="h-full sm:col-span-2 lg:col-span-1">
             <a
               href="mailto:2s1mrentcar@gmail.com"
-              className="block h-full p-8 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group"
+              className="block h-full p-6 lg:p-4 xl:p-6 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group flex flex-col items-center"
             >
               <div className="w-12 h-12 mx-auto rounded-full border border-orange/40 flex items-center justify-center text-orange mb-4 group-hover:bg-orange group-hover:text-background transition-all">
                 <MessageCircle size={22} />
               </div>
               <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">Email</p>
-              <p className="text-sm font-medium text-foreground leading-relaxed">
+              <p className="text-sm lg:text-xs xl:text-sm font-medium text-foreground break-all w-full text-center">
                 2s1mrentcar@gmail.com
               </p>
             </a>
