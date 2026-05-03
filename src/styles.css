@@ -1,0 +1,230 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+@theme inline {
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-orange: var(--orange);
+    --color-orange-soft: var(--orange-soft);
+    --font-display: "Playfair Display", serif;
+    --font-sans: "Inter", sans-serif;
+}
+
+:root {
+    --radius: 0.75rem;
+    /* Primary Dark Blue */
+    --background: #0B1D2A;
+    --foreground: #E2E8F0;
+    
+    /* Secondary Dark Blue */
+    --card: #132F45;
+    --card-foreground: #E2E8F0;
+    --popover: #132F45;
+    --popover-foreground: #E2E8F0;
+    
+    /* Dark Orange Accent */
+    --primary: #D97706;
+    --primary-foreground: #FFFFFF;
+    
+    --secondary: #132F45;
+    --secondary-foreground: #E2E8F0;
+    
+    --muted: #132F45;
+    --muted-foreground: #94A3B8;
+    
+    --accent: #D97706;
+    --accent-foreground: #FFFFFF;
+    
+    --destructive: oklch(0.60 0.22 25);
+    --destructive-foreground: oklch(0.98 0 0);
+    
+    /* Subtle Borders */
+    --border: #1F2937;
+    --input: #1F2937;
+    --ring: #D97706;
+    
+    --orange: #D97706;
+    --orange-soft: #FDBA74;
+    --gradient-orange: linear-gradient(135deg, #FDBA74, #D97706);
+    --gradient-dark: linear-gradient(180deg, #0B1D2A, #132F45);
+    --shadow-orange: 0 10px 40px -10px rgba(217, 119, 6, 0.35);
+    --shadow-orange-strong: 0 0 60px rgba(217, 119, 6, 0.25);
+}
+
+.light {
+    --background: #F8FAFC;
+    --foreground: #0F172A;
+    
+    --card: #FFFFFF;
+    --card-foreground: #0F172A;
+    --popover: #FFFFFF;
+    --popover-foreground: #0F172A;
+    
+    --primary: #D97706;
+    --primary-foreground: #FFFFFF;
+    
+    --secondary: #E2E8F0;
+    --secondary-foreground: #0F172A;
+    
+    --muted: #F1F5F9;
+    --muted-foreground: #475569;
+    
+    --accent: #D97706;
+    --accent-foreground: #FFFFFF;
+    
+    --destructive: oklch(0.55 0.22 25);
+    --destructive-foreground: oklch(0.98 0 0);
+    
+    --border: #E2E8F0;
+    --input: #E2E8F0;
+    --ring: #D97706;
+    
+    --orange: #D97706;
+    --orange-soft: #FDBA74;
+    --gradient-orange: linear-gradient(135deg, #FDBA74, #D97706);
+    --gradient-dark: linear-gradient(180deg, #F8FAFC, #E2E8F0);
+    --shadow-orange: 0 10px 40px -10px rgba(217, 119, 6, 0.25);
+    --shadow-orange-strong: 0 0 60px rgba(217, 119, 6, 0.20);
+}
+
+@layer base {
+    * {
+        border-color: var(--color-border);
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: var(--font-display);
+        letter-spacing: -0.01em;
+    }
+}
+
+@layer utilities {
+    .text-orange {
+        color: var(--orange);
+    }
+    .bg-orange {
+        background-color: var(--orange);
+    }
+    .border-orange {
+        border-color: var(--orange);
+    }
+    .gradient-orange-text {
+        background: var(--gradient-orange);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    .glow-orange {
+        box-shadow: var(--shadow-orange);
+    }
+    .glow-orange-strong {
+        box-shadow: var(--shadow-orange-strong);
+    }
+    .ease-premium {
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .glow-radial {
+        background: radial-gradient(circle at center, rgba(217, 119, 6, 0.18), transparent 70%);
+    }
+    .btn-orange {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.75rem;
+        border-radius: 9999px;
+        border: 1px solid var(--orange);
+        color: var(--orange);
+        background: transparent;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        transition: all 0.3s ease;
+    }
+    .btn-orange:hover {
+        background: var(--orange);
+        color: #FFFFFF;
+        box-shadow: var(--shadow-orange);
+        transform: translateY(-2px);
+    }
+    .btn-orange-solid {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.75rem;
+        border-radius: 9999px;
+        background: var(--orange);
+        color: #FFFFFF;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+    }
+    .btn-orange-solid:hover {
+        box-shadow: var(--shadow-orange);
+        background: #B45309;
+        transform: translateY(-2px);
+    }
+    .fade-in-up {
+        animation: fadeInUp 0.8s ease both;
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(24px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes heartbeat {
+        0%, 100% {
+            transform: scale(1);
+            opacity: 0.15;
+        }
+        50% {
+            transform: scale(1.45);
+            opacity: 0.7;
+        }
+    }
+
+    .animate-heartbeat {
+        animation: heartbeat 1.8s ease-in-out infinite;
+    }
+}
