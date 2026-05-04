@@ -53,7 +53,15 @@ export function Offers() {
                   {o.icon}
                 </div>
                 <h3 className="text-2xl font-semibold mb-4">{o.title}</h3>
-                <p className="text-muted-foreground text-base leading-relaxed mb-8 flex-1">{o.desc}</p>
+                <p className="text-muted-foreground text-base leading-relaxed mb-8 flex-1">
+                  {o.desc.includes('250') ? (
+                    <>
+                      {o.desc.split(/250\s*DH|٢٥٠\s*درهم/)[0]}
+                      <span className="text-orange font-bold text-lg">250 {lang === 'ar' ? 'درهم' : 'DH'}</span>
+                      {o.desc.split(/250\s*DH|٢٥٠\s*درهم/)[1]}
+                    </>
+                  ) : o.desc}
+                </p>
                 
                 <a 
                   href={`https://wa.me/212660292821?text=${encodeURIComponent(c.waMessage)}%20${encodeURIComponent(o.title)}`} 
