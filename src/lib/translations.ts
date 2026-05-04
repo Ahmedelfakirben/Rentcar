@@ -31,7 +31,7 @@ export const translations = {
     fleet: {
       title: "Notre flotte",
       subtitle: "Nos voitures",
-      description: "Une selección de véhicules modernes et fiables, à des tarifs accessibles.",
+      description: "Une sélection de véhicules modernes et fiables, à partir de 250 DH / jour.",
       perDay: "DH / jour",
       book: "Réserver",
       loading: "Chargement de la flotte...",
@@ -134,7 +134,7 @@ export const translations = {
     fleet: {
       title: "Nuestra flota",
       subtitle: "Nuestros coches",
-      description: "Una selección de vehículos modernos y fiables, a precios accesibles.",
+      description: "Una selección de vehículos modernos y fiables, desde 250 DH / día.",
       perDay: "DH / día",
       book: "Reservar",
       loading: "Cargando la flota...",
@@ -237,7 +237,7 @@ export const translations = {
     fleet: {
       title: "Our Fleet",
       subtitle: "Our Cars",
-      description: "A selection of modern and reliable vehicles at affordable rates.",
+      description: "A selection of modern and reliable vehicles, starting from 250 DH / day.",
       perDay: "DH / day",
       book: "Book Now",
       loading: "Loading fleet...",
@@ -340,7 +340,7 @@ export const translations = {
     fleet: {
       title: "أسطولنا",
       subtitle: "سياراتنا",
-      description: "مجموعة مختارة من السيارات الحديثة والموثوقة بأسعار مناسبة.",
+      description: "مجموعة مختارة من السيارات الحديثة والموثوقة، تبدأ من 250 درهم / يوم.",
       perDay: "درهم / يوم",
       book: "احجز الآن",
       loading: "جاري تحميل الأسطول...",

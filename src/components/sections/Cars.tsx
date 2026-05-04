@@ -165,7 +165,13 @@ export function Cars() {
           </FadeIn>
           <FadeIn delay={200}>
             <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto font-medium drop-shadow-md">
-              {t.fleet.description}
+              {t.fleet.description.includes('250') ? (
+                <>
+                  {t.fleet.description.split(/250\s*DH|٢٥٠\s*درهم/)[0]}
+                  <span className="text-orange font-black text-xl mx-1">250 {lang === 'ar' ? 'درهم' : 'DH'}</span>
+                  {t.fleet.description.split(/250\s*DH|٢٥٠\s*درهم/)[1]}
+                </>
+              ) : t.fleet.description}
             </p>
           </FadeIn>
         </div>
