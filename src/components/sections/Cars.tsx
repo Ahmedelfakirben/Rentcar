@@ -142,7 +142,8 @@ export function Cars() {
 
         {/* Lighter, more subtle gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/40 z-0" />
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black to-transparent z-0" />
+        <div className="absolute top-0 left-0 right-0 h-48 bg-gradient-to-b from-black to-transparent z-0 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black to-transparent z-0 pointer-events-none" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
