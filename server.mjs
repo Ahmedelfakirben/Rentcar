@@ -15,7 +15,7 @@ const assets = sirv('dist/client', {
 const ssrHandler = createServerAdapter(app.fetch);
 
 const server = createServer((req, res) => {
-  const host = req.headers.host || '';
+  const host = req.headers['x-forwarded-host'] || req.headers.host || '';
   
   // 301 Redirect for the secondary domain
   if (host.includes('2s1mrentcar.com')) {
