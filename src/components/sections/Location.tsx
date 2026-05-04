@@ -66,12 +66,12 @@ export function Location() {
               <iframe
                 title="Localisation 2S1M Rent Car"
                 src="https://maps.google.com/maps?q=35.592710,-5.350765&t=m&z=16&output=embed&iwloc=near"
-                className="w-full h-full grayscale invert brightness-[0.7] contrast-[1.2] opacity-80"
+                className="w-full h-full opacity-90 contrast-[1.1] saturate-[1.2]"
                 loading="lazy"
               />
-              <div className="absolute inset-0 pointer-events-none border-[12px] border-black/60 rounded-[3rem]" />
+              <div className="absolute inset-0 pointer-events-none border-[12px] border-black/40 rounded-[3rem]" />
               {/* Subtle Dark Glow Overlay */}
-              <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+              <div className="absolute inset-0 bg-orange/5 pointer-events-none mix-blend-overlay" />
             </div>
           </FadeIn>
         </div>
