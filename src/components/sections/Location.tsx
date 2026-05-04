@@ -13,7 +13,7 @@ export function Location() {
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-orange/20 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-orange/5 blur-[150px] rounded-full pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center mb-20">
           <FadeIn delay={0}>
             <span className="inline-block px-4 py-1.5 mb-6 text-[11px] font-black tracking-[0.3em] uppercase bg-orange/10 text-orange border border-orange/20 rounded-full">
@@ -21,7 +21,7 @@ export function Location() {
             </span>
           </FadeIn>
           <FadeIn delay={100}>
-            <h2 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-none">
+            <h2 className="text-3xl sm:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-none">
               {c.title.split('').map((char, i) => (
                 <span key={i} className={i >= Math.floor(c.title.length / 2) ? "gradient-orange-text" : ""}>{char}</span>
               ))}
@@ -29,16 +29,16 @@ export function Location() {
           </FadeIn>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-12 items-stretch">
           <FadeIn delay={200} className="h-full">
-            <div className="p-6 sm:p-10 rounded-[2rem] sm:rounded-[3rem] bg-black backdrop-blur-xl border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] h-full flex flex-col justify-center">
+            <div className="p-5 sm:p-10 rounded-[2rem] sm:rounded-[3rem] bg-black backdrop-blur-xl border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] h-full flex flex-col justify-center">
               <div className="flex items-start gap-6 mb-10 group">
                 <div className="w-16 h-16 rounded-2xl bg-orange text-black flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(255,153,0,0.3)] group-hover:scale-110 transition-transform duration-500">
                   <MapPin size={28} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-black text-white mb-2 tracking-tight">{c.city}</h3>
-                  <p className="text-white/70 font-medium leading-relaxed uppercase">
+                  <h3 className="text-xl sm:text-2xl font-black text-white mb-2 tracking-tight">{c.city}</h3>
+                  <p className="text-white/70 font-medium leading-relaxed uppercase text-[10px] sm:text-base">
                     {c.address}
                   </p>
                 </div>
