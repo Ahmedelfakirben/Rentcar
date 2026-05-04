@@ -65,7 +65,12 @@ export function Contact() {
           </FadeIn>
 
           <FadeIn delay={500} className="h-full sm:col-span-2 lg:col-span-1">
-            <div className="block h-full p-6 lg:p-4 xl:p-6 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group">
+            <a
+              href="https://maps.app.goo.gl/XVnLT1ASWn1tRYWL9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full p-6 lg:p-4 xl:p-6 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group"
+            >
               <div className="w-12 h-12 mx-auto rounded-full border border-orange/40 flex items-center justify-center text-orange mb-4 group-hover:bg-orange group-hover:text-background transition-all">
                 <MapPin size={22} />
               </div>
@@ -73,7 +78,7 @@ export function Contact() {
               <p className="text-xs lg:text-[11px] xl:text-xs font-medium text-foreground leading-relaxed uppercase break-words">
                 RUE 14 AV MOHAMED BENOUNA<br/>QUARTIER BOUJARAH, TÉTOUAN
               </p>
-            </div>
+            </a>
           </FadeIn>
 
           <FadeIn delay={600} className="h-full sm:col-span-2 lg:col-span-1">
