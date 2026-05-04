@@ -103,7 +103,7 @@ export function FooterLinks() {
                 </a>
               </li>
               <li>
-                <a href="https://2s1mrentcar.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-orange transition-colors">
+                <a href="https://rentcartetouan.ma" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-orange transition-colors">
                   <Globe size={16} className="text-orange" />
                   2s1mrentcar.com
                 </a>
