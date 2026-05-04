@@ -33,9 +33,14 @@ export function Location() {
           <FadeIn delay={200} className="h-full">
             <div className="p-5 sm:p-10 rounded-[2rem] sm:rounded-[3rem] bg-black backdrop-blur-xl border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] h-full flex flex-col justify-center">
               <div className="flex items-start gap-6 mb-10 group">
-                <div className="w-16 h-16 rounded-2xl bg-orange text-black flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(255,153,0,0.3)] group-hover:scale-110 transition-transform duration-500">
+                <a 
+                  href="https://www.google.com/maps/dir/?api=1&destination=35.592710,-5.350765" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-16 h-16 rounded-2xl bg-orange text-black flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(255,153,0,0.3)] hover:scale-110 active:scale-95 transition-transform duration-500 cursor-pointer"
+                >
                   <MapPin size={28} />
-                </div>
+                </a>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-black text-white mb-2 tracking-tight">{c.city}</h3>
                   <p className="text-white/70 font-medium leading-relaxed uppercase text-[10px] sm:text-base">
