@@ -246,7 +246,7 @@ export function Cars() {
       <Dialog open={!!selectedCar} onOpenChange={(open) => !open && setSelectedCar(null)}>
         <DialogContent className="sm:max-w-[1000px] w-[95vw] bg-black border border-orange/20 p-0 overflow-hidden rounded-[2rem] shadow-2xl">
           {selectedCar && (
-            <div className="flex flex-col lg:flex-row h-full max-h-[90vh] overflow-y-auto lg:overflow-hidden">
+            <div className="flex flex-col lg:flex-row h-full max-h-[90vh] overflow-y-auto lg:overflow-hidden custom-scrollbar">
               <div className="w-full lg:w-3/5 flex flex-col relative group/gallery border-b lg:border-b-0 lg:border-r border-orange/10 bg-slate-950 overflow-hidden shrink-0">
                 <div className="absolute inset-0 z-0">
                   <img src={selectedCar.img} alt="" className="w-full h-full object-cover opacity-40 blur-md scale-105" />
