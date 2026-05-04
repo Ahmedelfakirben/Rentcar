@@ -1,7 +1,7 @@
 import logo from "@/assets/logo.svg";
 import { FadeIn } from "@/components/FadeIn";
 import { useTranslation } from "@/lib/useTranslation";
-import { ShieldCheck, Clock, Award } from "lucide-react";
+import { ShieldCheck, Clock, Award, Map } from "lucide-react";
 
 export function About() {
   const { lang, t } = useTranslation();
@@ -41,11 +41,12 @@ export function About() {
             </FadeIn>
 
             {/* Pillars */}
-            <div className="space-y-8">
+            <div className="grid sm:grid-cols-2 gap-8 lg:block lg:space-y-8">
               {[
                 { icon: <ShieldCheck className="text-orange" />, title: c.pillar1, desc: c.pillar1Desc },
                 { icon: <Clock className="text-orange" />, title: c.pillar2, desc: c.pillar2Desc },
                 { icon: <Award className="text-orange" />, title: c.pillar3, desc: c.pillar3Desc },
+                { icon: <Map className="text-orange" />, title: c.pillar4, desc: c.pillar4Desc },
               ].map((p, i) => (
                 <FadeIn key={p.title} delay={300 + i * 100}>
                   <div className="flex gap-5 group">

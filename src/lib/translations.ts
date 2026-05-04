@@ -26,7 +26,9 @@ export const translations = {
       pillar2: "Service VIP 24/7",
       pillar2Desc: "Une équipe dédiée à votre disposition à tout moment.",
       pillar3: "Engagement Qualité",
-      pillar3Desc: "Pas de compromis sur votre confort et votre satisfaction."
+      pillar3Desc: "Pas de compromis sur votre confort et votre satisfaction.",
+      pillar4: "Livraison Nationale",
+      pillar4Desc: "Nous livrons votre véhicule partout au Maroc sur simple demande."
     },
     fleet: {
       title: "Notre flotte",
@@ -129,7 +131,9 @@ export const translations = {
       pillar2: "Servicio VIP 24/7",
       pillar2Desc: "Un equipo dedicado a su disposición en todo momento.",
       pillar3: "Compromiso de Calidad",
-      pillar3Desc: "Sin compromisos en su comodidad y satisfacción."
+      pillar3Desc: "Sin compromisos en su comodidad y satisfacción.",
+      pillar4: "Entrega Nacional",
+      pillar4Desc: "Entregamos su vehículo en cualquier parte de Marruecos a su petición."
     },
     fleet: {
       title: "Nuestra flota",
@@ -232,7 +236,9 @@ export const translations = {
       pillar2: "24/7 VIP Service",
       pillar2Desc: "A dedicated team at your disposal at any time.",
       pillar3: "Quality Commitment",
-      pillar3Desc: "No compromise on your comfort and satisfaction."
+      pillar3Desc: "No compromise on your comfort and satisfaction.",
+      pillar4: "National Delivery",
+      pillar4Desc: "We deliver your vehicle anywhere in Morocco upon request."
     },
     fleet: {
       title: "Our Fleet",
@@ -335,7 +341,9 @@ export const translations = {
       pillar2: "خدمة VIP 24/7",
       pillar2Desc: "فريق متخصص في خدمتكم في أي وقت.",
       pillar3: "الالتزام بالجودة",
-      pillar3Desc: "لا مساومة على راحتكم ورضاكم."
+      pillar3Desc: "لا مساومة على راحتكم ورضاكم.",
+      pillar4: "توصيل وطني",
+      pillar4Desc: "نقوم بتوصيل سيارتك إلى أي مكان في المغرب بناءً على طلبك."
     },
     fleet: {
       title: "أسطولنا",
