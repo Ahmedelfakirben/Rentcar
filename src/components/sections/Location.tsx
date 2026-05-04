@@ -7,13 +7,13 @@ export function Location() {
   const c = t.location;
 
   return (
-    <section id="localisation" className="relative py-24 sm:py-32 lg:py-40 overflow-hidden bg-black">
+    <section id="localisation" className="relative py-24 sm:py-32 lg:py-40 overflow-hidden bg-black w-full max-w-[100vw]">
       {/* Premium background effects */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-orange/10 via-transparent to-black z-0" />
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-orange/20 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-orange/5 blur-[150px] rounded-full pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full overflow-hidden">
         <div className="text-center mb-20">
           <FadeIn delay={0}>
             <span className="inline-block px-4 py-1.5 mb-6 text-[11px] font-black tracking-[0.3em] uppercase bg-orange/10 text-orange border border-orange/20 rounded-full">
@@ -41,26 +41,26 @@ export function Location() {
                 >
                   <MapPin size={28} />
                 </a>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-xl sm:text-2xl font-black text-white mb-2 tracking-tight">{c.city}</h3>
-                  <p className="text-white/70 font-medium leading-relaxed uppercase text-xs sm:text-base break-words">
+                <div className="flex-1 min-w-0 pr-2">
+                  <h3 className="text-xl sm:text-2xl font-black text-white mb-2 tracking-tight break-words">{c.city}</h3>
+                  <p className="text-white/70 font-medium leading-relaxed uppercase text-xs sm:text-base break-words whitespace-normal">
                     {c.address}
                   </p>
                 </div>
               </div>
 
-              <div className="space-y-4 pt-8 border-t border-white/10">
-                <div className="flex items-center gap-4 text-white font-bold uppercase tracking-wider text-xs group">
-                  <div className="w-10 h-10 rounded-xl bg-orange/10 border border-orange/20 flex items-center justify-center group-hover:bg-orange group-hover:text-black transition-all">
-                    <Clock size={18} className="text-orange group-hover:text-black transition-colors" />
+              <div className="space-y-4 pt-8 border-t border-white/10 w-full">
+                <div className="flex items-center gap-3 sm:gap-4 text-white font-bold uppercase tracking-wider text-[10px] sm:text-xs group break-words flex-wrap">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 shrink-0 rounded-xl bg-orange/10 border border-orange/20 flex items-center justify-center group-hover:bg-orange group-hover:text-black transition-all">
+                    <Clock size={16} className="text-orange group-hover:text-black transition-colors" />
                   </div>
-                  {c.hours}
+                  <span className="flex-1 min-w-0 break-words leading-tight">{c.hours}</span>
                 </div>
-                <div className="flex items-center gap-4 text-white font-bold uppercase tracking-wider text-xs group">
-                  <div className="w-10 h-10 rounded-xl bg-orange/10 border border-orange/20 flex items-center justify-center group-hover:bg-orange group-hover:text-black transition-all">
-                    <Clock size={18} className="text-orange group-hover:text-black transition-colors" />
+                <div className="flex items-center gap-3 sm:gap-4 text-white font-bold uppercase tracking-wider text-[10px] sm:text-xs group break-words flex-wrap">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 shrink-0 rounded-xl bg-orange/10 border border-orange/20 flex items-center justify-center group-hover:bg-orange group-hover:text-black transition-all">
+                    <Clock size={16} className="text-orange group-hover:text-black transition-colors" />
                   </div>
-                  {c.service}
+                  <span className="flex-1 min-w-0 break-words leading-tight">{c.service}</span>
                 </div>
               </div>
             </div>
