@@ -109,9 +109,9 @@ export function FooterLinks() {
                 </a>
               </li>
               <li>
-                <a href="mailto:2s1mrentcartetouan@gmail.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-orange transition-colors">
-                  <MessageCircle size={16} className="text-orange" />
-                  2s1mrentcartetouan@gmail.com
+                <a href="mailto:2s1mrentcartetouan@gmail.com" className="flex items-start gap-3 text-sm text-muted-foreground hover:text-orange transition-colors break-all">
+                  <MessageCircle size={16} className="text-orange shrink-0 mt-0.5" />
+                  <span>2s1mrentcartetouan@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground pt-2">
