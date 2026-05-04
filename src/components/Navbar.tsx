@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "@/assets/logo.svg";
 import { useTranslation } from "@/lib/useTranslation";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Globe, ChevronDown } from "lucide-react";
+import { Globe, ChevronDown, ChevronRight } from "lucide-react";
 
 export function Navbar() {
   const { t, lang } = useTranslation();
@@ -166,63 +166,62 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       <div 
-        className={`lg:hidden grid transition-all duration-300 ease-in-out ${
-          open ? "grid-rows-[1fr] opacity-100 pointer-events-auto" : "grid-rows-[0fr] opacity-0 pointer-events-none"
+        className={`lg:hidden absolute top-full left-0 right-0 overflow-y-auto transition-all duration-500 ease-premium bg-black border-t border-white/5 ${
+          open ? "h-[100dvh] opacity-100" : "h-0 opacity-0 pointer-events-none"
         }`}
       >
-        <div className="overflow-hidden bg-background/95 backdrop-blur-md border-t border-orange/20">
-          <ul className="px-6 py-6 space-y-4">
-            {links.map((l) => (
-              <li key={l.label}>
+        <div className="px-6 py-8 flex flex-col min-h-[calc(100dvh-80px)] pb-32">
+          <ul className="space-y-1 flex-1">
+            {links.map((l, idx) => (
+              <li key={l.label} className="border-b border-white/5 last:border-0" style={{ transitionDelay: `${idx * 50}ms` }}>
                 {l.type === 'link' ? (
                   <Link
                     to={l.to as any}
                     hash={l.hash}
                     params={{ lang }}
                     onClick={() => setOpen(false)}
-                    className={`block text-lg font-medium ${scrolled ? 'text-foreground' : 'text-white'} hover:text-orange transition-colors`}
+                    className="flex items-center justify-between py-5 text-xl font-medium text-white hover:text-orange transition-colors"
                   >
                     {l.label}
+                    <ChevronRight size={18} className="text-orange/50" />
                   </Link>
                 ) : (
-                  <div className="space-y-3">
-                    <p className="text-sm font-bold uppercase tracking-widest text-orange/60">{l.label}</p>
-                    <div className="grid gap-2 pl-2">
-                      {l.items?.map((item) => (
-                        <Link
-                          key={item.to}
-                          to={item.to as any}
-                          params={{ lang }}
-                          onClick={() => setOpen(false)}
-                          className="text-base font-medium text-foreground hover:text-orange py-1"
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
-                    </div>
+                  <div className="flex flex-col">
+                    {l.items?.map((item, i) => (
+                      <Link
+                        key={item.to}
+                        to={item.to as any}
+                        params={{ lang }}
+                        onClick={() => setOpen(false)}
+                        className={`flex items-center justify-between py-5 text-xl font-medium text-white hover:text-orange transition-colors ${i > 0 ? 'border-t border-white/5' : ''}`}
+                      >
+                        {item.label}
+                        <ChevronRight size={18} className="text-orange/50" />
+                      </Link>
+                    ))}
                   </div>
                 )}
               </li>
             ))}
-            
-            <li className="pt-6 border-t border-orange/15">
-              <div className="grid grid-cols-2 gap-2">
-                {languages.map((l) => (
-                  <Link
-                    key={l.code}
-                    to="/$lang"
-                    params={{ lang: l.code }}
-                    onClick={() => setOpen(false)}
-                    className={`flex items-center gap-2 px-4 py-3 rounded-xl border border-orange/10 bg-orange/5 text-xs ${lang === l.code ? 'border-orange text-orange font-bold' : 'text-muted-foreground'}`}
-                  >
-                    {l.flag} {l.name}
-                  </Link>
-                ))}
-              </div>
-            </li>
-
-
           </ul>
+          
+          <div className="pt-12 mt-auto">
+            <p className="text-center text-[10px] font-black text-white/30 uppercase tracking-[0.2em] mb-4">{t.nav.home || 'LANGUAGE'}</p>
+            <div className="grid grid-cols-2 gap-3">
+              {languages.map((l) => (
+                <Link
+                  key={l.code}
+                  to="/$lang"
+                  params={{ lang: l.code }}
+                  onClick={() => setOpen(false)}
+                  className={`flex flex-col items-center justify-center gap-1.5 py-4 rounded-2xl border transition-all ${lang === l.code ? 'border-orange bg-orange/10 text-orange font-bold shadow-[0_0_20px_rgba(217,119,6,0.15)]' : 'border-white/5 bg-white/5 text-white/50 hover:bg-white/10 hover:text-white'}`}
+                >
+                  <span className="text-2xl drop-shadow-md">{l.flag}</span>
+                  <span className="text-xs tracking-wide">{l.name}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </header>
