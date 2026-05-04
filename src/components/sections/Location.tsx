@@ -21,7 +21,7 @@ export function Location() {
             </span>
           </FadeIn>
           <FadeIn delay={100}>
-            <h2 className="text-3xl sm:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-none">
+            <h2 className="text-2xl sm:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-none">
               {c.title.split('').map((char, i) => (
                 <span key={i} className={i >= Math.floor(c.title.length / 2) ? "gradient-orange-text" : ""}>{char}</span>
               ))}
@@ -30,8 +30,8 @@ export function Location() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-12 items-stretch">
-          <FadeIn delay={200} className="h-auto lg:h-full">
-            <div className="p-6 sm:p-10 rounded-[2rem] sm:rounded-[3rem] bg-black backdrop-blur-xl border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] lg:h-full flex flex-col lg:justify-center">
+          <FadeIn delay={200} className="w-full h-auto lg:h-full">
+            <div className="p-4 sm:p-10 rounded-[1.5rem] sm:rounded-[3rem] bg-black backdrop-blur-xl border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] lg:h-full flex flex-col lg:justify-center w-full">
               <div className="flex items-start gap-6 mb-10 group">
                 <a 
                   href="https://www.google.com/maps/dir/?api=1&destination=35.592710,-5.350765" 
@@ -66,8 +66,8 @@ export function Location() {
             </div>
           </FadeIn>
 
-          <FadeIn delay={300} className="h-auto lg:h-full">
-            <div className="rounded-[2rem] sm:rounded-[3rem] overflow-hidden border border-white/5 shadow-2xl aspect-video lg:aspect-auto lg:h-full min-h-[300px] sm:min-h-[400px] relative bg-black w-full">
+          <FadeIn delay={300} className="w-full h-auto lg:h-full">
+            <div className="rounded-[1.5rem] sm:rounded-[3rem] overflow-hidden border border-white/5 shadow-2xl aspect-video lg:aspect-auto lg:h-full min-h-[250px] sm:min-h-[400px] relative bg-black w-full">
               <iframe
                 title="Localisation 2S1M Rent Car"
                 src="https://maps.google.com/maps?q=35.592710,-5.350765&t=m&z=16&output=embed&iwloc=near"
