@@ -41,9 +41,9 @@ export function Location() {
                 >
                   <MapPin size={28} />
                 </a>
-                <div>
+                <div className="flex-1 min-w-0">
                   <h3 className="text-xl sm:text-2xl font-black text-white mb-2 tracking-tight">{c.city}</h3>
-                  <p className="text-white/70 font-medium leading-relaxed uppercase text-xs sm:text-base">
+                  <p className="text-white/70 font-medium leading-relaxed uppercase text-xs sm:text-base break-words">
                     {c.address}
                   </p>
                 </div>
