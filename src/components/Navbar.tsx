@@ -133,7 +133,7 @@ export function Navbar() {
             </button>
             
             {langOpen && (
-              <div className="absolute top-full right-0 mt-2 w-40 bg-black border border-orange/20 rounded-xl shadow-xl overflow-hidden animate-scale-in">
+              <div className="absolute top-full right-0 mt-2 w-40 bg-black border border-orange/20 rounded-xl shadow-xl overflow-hidden animate-scale-in z-[100]">
                 {languages.map((l) => (
                   <Link
                     key={l.code}
@@ -142,7 +142,7 @@ export function Navbar() {
                     onClick={() => setLangOpen(false)}
                     className={`flex items-center justify-between px-4 py-2.5 text-xs hover:bg-orange/10 transition-colors ${lang === l.code ? 'text-orange bg-orange/5 font-bold' : 'text-foreground'}`}
                   >
-                    <span>{l.flag} {l.name}</span>
+                    <span>{l.name}</span>
                     {lang === l.code && <div className="w-1.5 h-1.5 rounded-full bg-orange" />}
                   </Link>
                 ))}
