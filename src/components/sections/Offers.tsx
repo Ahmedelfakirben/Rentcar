@@ -29,6 +29,7 @@ export function Offers() {
       {/* Enhanced Orange Glows with Heartbeat animation - Increased Density */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-orange/25 blur-[120px] rounded-full pointer-events-none animate-heartbeat z-0" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange/15 blur-[100px] rounded-full pointer-events-none animate-heartbeat [animation-delay:1.5s] z-0" />
+      <div className="absolute bottom-[-1px] left-0 right-0 h-48 bg-gradient-to-b from-transparent to-orange/10 pointer-events-none z-0" />
 
       <div className="relative max-w-7xl mx-auto px-6 z-10">
         <div className="text-center mb-16">
