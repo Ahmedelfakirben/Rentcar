@@ -207,7 +207,7 @@ export function Navbar() {
           
           <div className="pt-12 mt-auto flex flex-col items-center">
             <img src={logo} alt="2S1M Rent Car" className="h-12 w-auto object-contain mb-8 opacity-90" />
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6 mb-10">
               <a href="https://www.facebook.com/share/1Gr4GZPhqC/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-orange hover:text-black hover:border-orange transition-all">
                 <Facebook size={20} />
               </a>
@@ -217,6 +217,20 @@ export function Navbar() {
               <a href="https://wa.me/212660292821" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-orange hover:text-black hover:border-orange transition-all">
                 <MessageCircle size={20} />
               </a>
+            </div>
+
+            <div className="w-full pt-8 border-t border-white/5 flex flex-col items-center text-center space-y-4">
+              <div className="space-y-1.5">
+                <a href="tel:0660292821" className="block text-sm font-medium text-white/80 hover:text-orange transition-colors">06 60 29 28 21</a>
+                <a href="tel:0531333293" className="block text-sm font-medium text-white/80 hover:text-orange transition-colors">05 31 33 32 93</a>
+                <a href="https://wa.me/212660292821" target="_blank" rel="noopener noreferrer" className="block text-sm font-medium text-white/80 hover:text-orange transition-colors">+212 6 60 29 28 21</a>
+              </div>
+              <a href="mailto:2s1mrentcartetouan@gmail.com" className="block text-sm font-medium text-white/80 hover:text-orange transition-colors">2s1mrentcartetouan@gmail.com</a>
+              <p className="text-[11px] text-white/50 leading-relaxed max-w-[250px] uppercase">RUE 14 AV MOHAMED BENOUNA,<br/>QUARTIER BOUJARAH, TÉTOUAN</p>
+              
+              <p className="text-[9px] uppercase tracking-widest text-white/30 pt-6">
+                © {new Date().getFullYear()} 2S1M Rent Car — Tous droits réservés
+              </p>
             </div>
           </div>
         </div>
