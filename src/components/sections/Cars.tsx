@@ -30,6 +30,7 @@ export function Cars() {
   const [cars, setCars] = useState<Car[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCar, setSelectedCar] = useState<Car | null>(null);
+  const [activeImage, setActiveImage] = useState<string | null>(null);
   const [disabledDates, setDisabledDates] = useState<Date[]>([]);
   const [date, setDate] = useState<DateRange | undefined>(undefined);
 
@@ -79,6 +80,7 @@ export function Cars() {
 
   const handleBookClick = async (car: Car) => {
     setSelectedCar(car);
+    setActiveImage(car.img);
     try {
       const { data, error } = await supabase
         .from('contracts')
@@ -261,7 +263,7 @@ export function Cars() {
 
                 <div className="flex-1 relative z-10 flex items-center justify-center p-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-                    <img src={selectedCar.img} alt={selectedCar.name} className="w-full h-full object-cover" />
+                    <img src={activeImage || selectedCar.img} alt={selectedCar.name} className="w-full h-full object-cover" />
                   </div>
                   <div className="absolute top-8 left-8 flex flex-col gap-2">
                     <span className="px-4 py-2 text-xs font-black tracking-widest uppercase bg-orange text-white rounded-xl shadow-xl shadow-orange/40">
@@ -271,15 +273,19 @@ export function Cars() {
                 </div>
 
                 {selectedCar.photos && selectedCar.photos.length > 0 && (
-                  <div className="px-6 pb-6 flex gap-3 overflow-x-auto scrollbar-hide relative z-20">
-                    {[selectedCar.img, ...selectedCar.photos.map(p => {
+                  <div className="px-6 pb-6 flex gap-3 overflow-x-auto custom-scrollbar relative z-20">
+                    {[selectedCar.img, ...selectedCar.photos.filter(p => p && p.trim() !== "").map(p => {
                       if (!p.startsWith('http')) {
                         const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
                         return `${supabaseUrl}/storage/v1/object/public/vehicle-images/${p}`;
                       }
                       return p;
                     })].map((photo, i) => (
-                      <div key={i} className="w-24 h-16 shrink-0 rounded-lg overflow-hidden border-2 border-white/20 hover:border-orange transition-colors cursor-pointer shadow-lg bg-black/60">
+                      <div 
+                        key={i} 
+                        onClick={() => setActiveImage(photo)}
+                        className={`w-24 h-16 shrink-0 rounded-lg overflow-hidden border-2 transition-all cursor-pointer shadow-lg bg-black/60 ${activeImage === photo ? 'border-orange scale-105' : 'border-white/20 hover:border-white/40'}`}
+                      >
                         <img src={photo} className="w-full h-full object-cover" />
                       </div>
                     ))}
