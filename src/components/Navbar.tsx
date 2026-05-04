@@ -65,7 +65,7 @@ export function Navbar() {
       <nav className="max-w-[1400px] mx-auto px-6 flex items-center justify-between h-full">
         {/* Left Column: Logo */}
         <div className="w-[200px] flex justify-start">
-          <Link to="/$lang" params={{ lang }} className="flex items-center gap-2">
+          <Link to="/$lang" params={{ lang } as any} className="flex items-center gap-2">
             <img src={logo} alt="2S1M Rent Car" className="h-[42px] w-auto object-contain transition-all duration-300" />
           </Link>
         </div>
@@ -79,7 +79,7 @@ export function Navbar() {
                   <Link
                     to={l.to as any}
                     hash={l.hash}
-                    params={{ lang }}
+                    params={{ lang } as any}
                     onClick={() => setOpen(false)}
                     className="text-[13px] tracking-[0.1em] uppercase font-bold text-white hover:text-orange transition-colors relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-orange hover:after:w-full after:transition-all"
                   >
@@ -102,7 +102,7 @@ export function Navbar() {
                             <Link
                               key={item.to}
                               to={item.to as any}
-                              params={{ lang }}
+                              params={{ lang } as any}
                               onClick={() => { setAirportsOpen(false); setOpen(false); }}
                               className="flex items-center px-4 py-3 text-xs text-foreground hover:bg-orange/10 hover:text-orange transition-colors"
                             >
@@ -178,7 +178,7 @@ export function Navbar() {
                   <Link
                     to={l.to as any}
                     hash={l.hash}
-                    params={{ lang }}
+                    params={{ lang } as any}
                     onClick={() => setOpen(false)}
                     className="flex items-center justify-between py-5 text-xl font-medium text-white hover:text-orange transition-colors"
                   >
@@ -191,7 +191,7 @@ export function Navbar() {
                       <Link
                         key={item.to}
                         to={item.to as any}
-                        params={{ lang }}
+                        params={{ lang } as any}
                         onClick={() => setOpen(false)}
                         className={`flex items-center justify-between py-5 text-xl font-medium text-white hover:text-orange transition-colors ${i > 0 ? 'border-t border-white/5' : ''}`}
                       >
