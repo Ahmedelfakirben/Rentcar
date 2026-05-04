@@ -31,7 +31,7 @@ export function Location() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           <FadeIn delay={200} className="h-full">
-            <div className="p-10 rounded-[3rem] bg-black backdrop-blur-xl border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] h-full flex flex-col justify-center">
+            <div className="p-6 sm:p-10 rounded-[2rem] sm:rounded-[3rem] bg-black backdrop-blur-xl border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] h-full flex flex-col justify-center">
               <div className="flex items-start gap-6 mb-10 group">
                 <div className="w-16 h-16 rounded-2xl bg-orange text-black flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(255,153,0,0.3)] group-hover:scale-110 transition-transform duration-500">
                   <MapPin size={28} />
@@ -62,14 +62,14 @@ export function Location() {
           </FadeIn>
 
           <FadeIn delay={300} className="h-full">
-            <div className="rounded-[3rem] overflow-hidden border border-white/5 shadow-2xl aspect-square lg:aspect-auto lg:h-full min-h-[400px] relative bg-black">
+            <div className="rounded-[2rem] sm:rounded-[3rem] overflow-hidden border border-white/5 shadow-2xl aspect-video lg:aspect-auto lg:h-full min-h-[300px] sm:min-h-[400px] relative bg-black">
               <iframe
                 title="Localisation 2S1M Rent Car"
                 src="https://maps.google.com/maps?q=35.592710,-5.350765&t=m&z=16&output=embed&iwloc=near"
                 className="w-full h-full opacity-90 contrast-[1.1] saturate-[1.2]"
                 loading="lazy"
               />
-              <div className="absolute inset-0 pointer-events-none border-[12px] border-black/40 rounded-[3rem]" />
+              <div className="absolute inset-0 pointer-events-none border-[4px] sm:border-[12px] border-black/40 rounded-[2rem] sm:rounded-[3rem]" />
               {/* Subtle Dark Glow Overlay */}
               <div className="absolute inset-0 bg-orange/5 pointer-events-none mix-blend-overlay" />
             </div>
