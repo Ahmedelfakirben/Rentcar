@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "@/assets/logo.svg";
 import { useTranslation } from "@/lib/useTranslation";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Globe, ChevronDown, ChevronRight } from "lucide-react";
+import { Globe, ChevronDown, ChevronRight, Facebook, Instagram, MessageCircle } from "lucide-react";
 
 export function Navbar() {
   const { t, lang } = useTranslation();
@@ -205,21 +205,18 @@ export function Navbar() {
             ))}
           </ul>
           
-          <div className="pt-12 mt-auto">
-            <p className="text-center text-[10px] font-black text-white/30 uppercase tracking-[0.2em] mb-4">{t.nav.home || 'LANGUAGE'}</p>
-            <div className="grid grid-cols-2 gap-3">
-              {languages.map((l) => (
-                <Link
-                  key={l.code}
-                  to="/$lang"
-                  params={{ lang: l.code }}
-                  onClick={() => setOpen(false)}
-                  className={`flex flex-col items-center justify-center gap-1.5 py-4 rounded-2xl border transition-all ${lang === l.code ? 'border-orange bg-orange/10 text-orange font-bold shadow-[0_0_20px_rgba(217,119,6,0.15)]' : 'border-white/5 bg-white/5 text-white/50 hover:bg-white/10 hover:text-white'}`}
-                >
-                  <span className="text-2xl drop-shadow-md">{l.flag}</span>
-                  <span className="text-xs tracking-wide">{l.name}</span>
-                </Link>
-              ))}
+          <div className="pt-12 mt-auto flex flex-col items-center">
+            <img src={logo} alt="2S1M Rent Car" className="h-12 w-auto object-contain mb-8 opacity-90" />
+            <div className="flex items-center gap-6">
+              <a href="https://www.facebook.com/share/1Gr4GZPhqC/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-orange hover:text-black hover:border-orange transition-all">
+                <Facebook size={20} />
+              </a>
+              <a href="https://www.instagram.com/tetouanrentcar?igsh=MWJ4c3hlMmx1Nm9ldA==" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-orange hover:text-black hover:border-orange transition-all">
+                <Instagram size={20} />
+              </a>
+              <a href="https://wa.me/212660292821" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-orange hover:text-black hover:border-orange transition-all">
+                <MessageCircle size={20} />
+              </a>
             </div>
           </div>
         </div>
