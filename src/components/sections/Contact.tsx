@@ -19,6 +19,7 @@ export function Contact() {
     >
       <div className="absolute inset-0 bg-black/60" />
       <div className="absolute inset-0 glow-radial pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-black to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <FadeIn delay={0}>
