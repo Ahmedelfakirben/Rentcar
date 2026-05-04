@@ -78,7 +78,7 @@ export function Contact() {
 
           <FadeIn delay={600} className="h-full sm:col-span-2 lg:col-span-1">
             <a
-              href="mailto:2s1mrentcar@gmail.com"
+              href="mailto:2s1mrentcartetouan@gmail.com"
               className="block h-full p-6 lg:p-4 xl:p-6 rounded-2xl bg-black/80 border border-white/10 hover:border-orange/50 hover:glow-orange transition-all group flex flex-col items-center"
             >
               <div className="w-12 h-12 mx-auto rounded-full border border-orange/40 flex items-center justify-center text-orange mb-4 group-hover:bg-orange group-hover:text-background transition-all">
@@ -86,7 +86,7 @@ export function Contact() {
               </div>
               <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">Email</p>
               <p className="text-sm lg:text-xs xl:text-sm font-medium text-foreground break-all w-full text-center">
-                2s1mrentcar@gmail.com
+                2s1mrentcartetouan@gmail.com
               </p>
             </a>
           </FadeIn>
