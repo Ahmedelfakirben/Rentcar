@@ -64,8 +64,8 @@ export function Location() {
           <FadeIn delay={300} className="h-full">
             <div className="rounded-[3rem] overflow-hidden border border-white/5 shadow-2xl aspect-square lg:aspect-auto lg:h-full min-h-[400px] relative bg-black">
               <iframe
-                title="Localisation Tétouan"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-5.39%2C35.55%2C-5.32%2C35.60&amp;layer=mapnik&amp;marker=35.5731%2C-5.3626"
+                title="Localisation 2S1M Rent Car"
+                src="https://maps.google.com/maps?q=35.592710,-5.350765&t=m&z=16&output=embed&iwloc=near"
                 className="w-full h-full grayscale invert brightness-[0.7] contrast-[1.2] opacity-80"
                 loading="lazy"
               />
