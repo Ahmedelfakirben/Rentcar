@@ -150,14 +150,7 @@ export function Navbar() {
             )}
           </div>
 
-          <a
-            href="https://wa.me/212660292821"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden lg:inline-flex btn-orange-solid !py-2 !px-5 text-sm"
-          >
-            {t.fleet.book}
-          </a>
+
 
           <button
             onClick={() => setOpen(!open)}
@@ -228,16 +221,7 @@ export function Navbar() {
               </div>
             </li>
 
-            <li className="pt-4">
-              <a 
-                href="https://wa.me/212660292821" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn-orange-solid w-full text-center block !py-4 text-base"
-              >
-                {t.fleet.book}
-              </a>
-            </li>
+
           </ul>
         </div>
       </div>
