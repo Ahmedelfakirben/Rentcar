@@ -63,7 +63,7 @@ export function Cars() {
               img: imageUrl || "/placeholder-car.jpg",
               photos: v.photos || [],
               price: v.daily_rate || 0,
-              type: v.fuel || "Citadine",
+              type: v.type || "Économique",
             };
           });
           setCars(formattedCars);
@@ -207,7 +207,7 @@ export function Cars() {
                     {car.transmission && (
                       <div className="absolute top-4 right-4">
                         <span className="px-3 py-1.5 text-[10px] font-bold tracking-widest uppercase bg-orange text-white rounded-lg shadow-lg shadow-orange/40">
-                          {car.transmission === 'manual' ? t.fleet.manual : t.fleet.auto}
+                          {car.transmission?.toLowerCase().includes('manu') ? t.fleet.manual : t.fleet.auto}
                         </span>
                       </div>
                     )}
@@ -228,12 +228,12 @@ export function Cars() {
                       <div className="flex flex-col items-center justify-center gap-1 border-x border-white/5">
                         <FuelIcon size={14} className="text-orange/70" />
                         <span className="text-[10px] font-bold text-muted-foreground uppercase">
-                          {car.fuel === 'diesel' ? t.fleet.diesel : car.fuel === 'essence' ? t.fleet.essence : (car.fuel || "—")}
+                          {car.fuel?.toLowerCase() === 'diesel' ? t.fleet.diesel : car.fuel?.toLowerCase() === 'essence' ? t.fleet.essence : (car.fuel || "—")}
                         </span>
                       </div>
                       <div className="flex flex-col items-center justify-center gap-1">
                         <SettingsIcon size={14} className="text-orange/70" />
-                        <span className="text-[10px] font-bold text-muted-foreground uppercase">{car.transmission === 'manual' ? t.fleet.manual : t.fleet.auto}</span>
+                        <span className="text-[10px] font-bold text-muted-foreground uppercase">{car.transmission?.toLowerCase().includes('manu') ? t.fleet.manual : t.fleet.auto}</span>
                       </div>
                     </div>
                     
@@ -306,12 +306,12 @@ export function Cars() {
                     <div className="flex items-center gap-1.5 text-muted-foreground bg-secondary/30 px-3 py-1.5 rounded-lg border border-orange/5">
                       <FuelIcon size={14} className="text-orange" />
                       <span className="text-xs font-bold uppercase">
-                        {selectedCar.fuel === 'diesel' ? t.fleet.diesel : selectedCar.fuel === 'essence' ? t.fleet.essence : (selectedCar.fuel || "—")}
+                        {selectedCar.fuel?.toLowerCase() === 'diesel' ? t.fleet.diesel : selectedCar.fuel?.toLowerCase() === 'essence' ? t.fleet.essence : (selectedCar.fuel || "—")}
                       </span>
                     </div>
                     <div className="flex items-center gap-1.5 text-muted-foreground bg-secondary/30 px-3 py-1.5 rounded-lg border border-orange/5">
                       <SettingsIcon size={14} className="text-orange" />
-                      <span className="text-xs font-bold uppercase">{selectedCar.transmission === 'manual' ? t.fleet.manual : t.fleet.auto}</span>
+                      <span className="text-xs font-bold uppercase">{selectedCar.transmission?.toLowerCase().includes('manu') ? t.fleet.manual : t.fleet.auto}</span>
                     </div>
                   </div>
                 </div>
