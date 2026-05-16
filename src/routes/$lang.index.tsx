@@ -7,6 +7,7 @@ import { Offers } from "@/components/sections/Offers";
 import { Location } from "@/components/sections/Location";
 import { Contact } from "@/components/sections/Contact";
 import { FooterLinks } from "@/components/FooterLinks";
+import { LocalBusinessJSONLD } from "@/components/LocalBusinessJSONLD";
 import { useTranslation } from "@/lib/useTranslation";
 
 export const Route = createFileRoute("/$lang/")({
@@ -20,6 +21,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
       <main>
+        <LocalBusinessJSONLD />
         <Hero />
         <About />
         <Cars />

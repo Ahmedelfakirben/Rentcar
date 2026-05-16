@@ -20,6 +20,8 @@ export const Route = createFileRoute('/$lang')({
       meta: [
         { title: t.title },
         { name: "description", content: t.description },
+        { property: "og:title", content: t.title },
+        { property: "og:description", content: t.description },
       ],
     };
   },

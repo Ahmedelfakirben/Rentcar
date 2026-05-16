@@ -17,6 +17,8 @@ export const Route = createFileRoute("/$lang/airports/tetouan")({
       meta: [
         { title: t.airports.tetouan.seoTitle },
         { name: "description", content: t.airports.tetouan.seoDesc },
+        { property: "og:title", content: t.airports.tetouan.seoTitle },
+        { property: "og:description", content: t.airports.tetouan.seoDesc },
       ],
     };
   }
@@ -70,8 +72,13 @@ function TetouanAirport() {
               </div>
               <div className="relative">
                 <FadeIn delay={400}>
-                   <div className="aspect-video rounded-3xl overflow-hidden border border-orange/20 shadow-2xl glow-orange">
-                      <img src="/ATetouan.png" className="w-full h-full object-cover" alt="Tetouan Airport" />
+                   <div className="grid grid-cols-2 gap-4">
+                      <div className="aspect-[3/4] rounded-2xl sm:rounded-3xl overflow-hidden border border-orange/20 shadow-2xl glow-orange">
+                         <img src="/fotoaeropuertotetouan.jpg" className="w-full h-full object-cover" alt="Aeropuerto Tetouan Sania Ramel - Rent Car Tetouan" />
+                      </div>
+                      <div className="aspect-[3/4] rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 shadow-xl mt-8 lg:mt-16">
+                         <img src="/ATetouan.png" className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity" alt="Tetouan Airport Delivery" />
+                      </div>
                    </div>
                 </FadeIn>
               </div>

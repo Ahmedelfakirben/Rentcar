@@ -1,7 +1,7 @@
 export const translations = {
   fr: {
-    title: "2S1M RENT CAR — Location de voitures premium à Tétouan",
-    description: "Agence de location de voitures à Tétouan. Véhicules modernes, fiables et accessibles.",
+    title: "Location de Voiture Tétouan - Rent Car Tétouan | 2S1M",
+    description: "Location de voiture à Tétouan avec Rent Car Tétouan (2S1M). Véhicules modernes, livraison gratuite à l'aéroport et tarifs imbattables. Réservez votre voiture dès maintenant !",
     hero: {
       intro: "VOTRE PARTENAIRE DE LOCATION PREMIUM À TÉTOUAN",
       btnContact: "Nous contacter",
@@ -81,8 +81,8 @@ export const translations = {
     },
     airports: {
       tangier: {
-        seoTitle: "Location Voiture Aéroport Tanger Ibn Battouta (TNG) | 2S1M",
-        seoDesc: "Service de livraison de voiture à l'aéroport de Tanger pour vos trajets vers Tétouan. Confort, rapidité et tarifs compétitifs.",
+        seoTitle: "Location de Voiture Aéroport de Tanger - Rent Car Tétouan | 2S1M",
+        seoDesc: "Alquiler de coches en el aeropuerto de Tánger (TNG) con entrega rápida para viajar a Tetuán. Rent Car Tetouan le ofrece confort, seguridad y precios bajos.",
         h1: "Location de voiture à l'Aéroport de Tanger",
         h2: "Ibn Battouta (TNG)",
         p: "Atterrissez à Tanger et partez directement vers Tétouan avec 2S1M. Nous vous livrons votre véhicule à l'aéroport pour un transfert en toute sérénité.",
@@ -92,8 +92,8 @@ export const translations = {
         feat4: "Prix fixes garantis"
       },
       tetouan: {
-        seoTitle: "Location Voiture Aéroport Tétouan Sania Ramel (TTU) | 2S1M",
-        seoDesc: "Alquiler de coches en el aeropuerto de Tetuán Sania Ramel. Entrega inmediata a su llegada. La mejor flota de Tétouan.",
+        seoTitle: "Location de Voiture Aéroport de Tétouan - Rent Car Tétouan | 2S1M",
+        seoDesc: "Alquiler de coches en el aeropuerto de Tetuán Sania Ramel. Entrega inmediata a su llegada. La mejor flota de coches en Tetuán con Rent Car Tetouan.",
         h1: "Location de voiture à l'Aéroport de Tétouan",
         h2: "Sania Ramel (TTU)",
         p: "Récupérez votre voiture dès votre descente d'avion à l'aéroport de Tétouan. Un service rapide, efficace et sans attente pour commencer votre séjour.",
@@ -105,8 +105,8 @@ export const translations = {
     }
   },
   es: {
-    title: "2S1M RENT CAR — Alquiler de coches premium en Tetuán",
-    description: "Agencia de alquiler de coches en Tetuán. Vehículos modernos, fiables y económicos.",
+    title: "Alquiler de Coches Tetuán - Rent Car Tetouan | 2S1M",
+    description: "Alquiler de coches en Tetuán con Rent Car Tetouan (2S1M). Vehículos modernos, entrega gratuita en el aeropuerto y los mejores precios de Marruecos. ¡Reserva hoy mismo!",
     hero: {
       intro: "SU SOCIO DE ALQUILER PREMIUM EN TETUÁN",
       btnContact: "Contáctenos",
@@ -186,8 +186,8 @@ export const translations = {
     },
     airports: {
       tangier: {
-        seoTitle: "Alquiler de Coches Aeropuerto de Tánger Ibn Battouta (TNG) | 2S1M",
-        seoDesc: "Servicio de entrega de coches en el aeropuerto de Tánger para sus viajes a Tetuán. Confort, rapidez y precios competitivos.",
+        seoTitle: "Alquiler de Coches Aeropuerto de Tánger - Rent Car Tetouan | 2S1M",
+        seoDesc: "Servicio de entrega de coches en el aeropuerto de Tánger para sus viajes a Tetuán. Confort, rapidez y los mejores precios con Rent Car Tetouan.",
         h1: "Alquiler de coches en el Aeropuerto de Tánger",
         h2: "Ibn Battouta (TNG)",
         p: "Aterrice en Tánger y viaje directamente a Tetuán con 2S1M. Le entregamos su vehículo en el aeropuerto para un traslado sin estrés.",
@@ -197,8 +197,8 @@ export const translations = {
         feat4: "Precios fijos garantizados"
       },
       tetouan: {
-        seoTitle: "Alquiler de Coches Aeropuerto de Tetuán Sania Ramel (TTU) | 2S1M",
-        seoDesc: "Alquiler de coches en el aeropuerto de Tetuán Sania Ramel. Entrega inmediata a su llegada. La mejor flota de Tetuán.",
+        seoTitle: "Alquiler de Coches Aeropuerto de Tetuán - Rent Car Tetouan | 2S1M",
+        seoDesc: "Alquiler de coches en el aeropuerto de Tetuán Sania Ramel. Entrega inmediata a su llegada. La flota más moderna de Tetuán con Rent Car Tetouan.",
         h1: "Alquiler de coches en el Aeropuerto de Tetuán",
         h2: "Sania Ramel (TTU)",
         p: "Recoja su coche nada más bajar del avión en el aeropuerto de Tetuán. Un servicio rápido, eficaz y sin esperas para comenzar su estancia.",
@@ -210,8 +210,8 @@ export const translations = {
     }
   },
   en: {
-    title: "2S1M RENT CAR — Premium Car Rental in Tetouan",
-    description: "Car rental agency in Tetouan. Modern, reliable and affordable vehicles.",
+    title: "Car Rental Tetouan - Rent Car Tetouan | 2S1M",
+    description: "Car rental in Tetouan with Rent Car Tetouan (2S1M). Modern vehicles, free airport delivery, and the most competitive rates in Morocco. Book your car online today!",
     hero: {
       intro: "YOUR PREMIUM RENTAL PARTNER IN TETOUAN",
       btnContact: "Contact us",
@@ -291,8 +291,8 @@ export const translations = {
     },
     airports: {
       tangier: {
-        seoTitle: "Car Rental Tangier Ibn Battouta Airport (TNG) | 2S1M",
-        seoDesc: "Car delivery service at Tangier airport for your trips to Tetouan. Comfort, speed and competitive rates.",
+        seoTitle: "Car Rental Tangier Airport - Rent Car Tetouan | 2S1M",
+        seoDesc: "Car delivery service at Tangier airport for your trips to Tetouan. Comfort, speed and competitive rates with Rent Car Tetouan.",
         h1: "Car Rental at Tangier Airport",
         h2: "Ibn Battouta (TNG)",
         p: "Land in Tangier and travel directly to Tetouan with 2S1M. We deliver your vehicle to the airport for a stress-free transfer.",
@@ -302,8 +302,8 @@ export const translations = {
         feat4: "Guaranteed Fixed Prices"
       },
       tetouan: {
-        seoTitle: "Car Rental Tetouan Sania Ramel Airport (TTU) | 2S1M",
-        seoDesc: "Car rental at Tetouan Sania Ramel airport. Immediate delivery upon arrival. The best fleet in Tetouan.",
+        seoTitle: "Car Rental Tetouan Airport - Rent Car Tetouan | 2S1M",
+        seoDesc: "Car rental at Tetouan Sania Ramel airport. Immediate delivery upon arrival. The best car fleet in Tetouan with Rent Car Tetouan.",
         h1: "Car Rental at Tetouan Airport",
         h2: "Sania Ramel (TTU)",
         p: "Pick up your car right after getting off the plane at Tetouan airport. A fast, efficient and waiting-free service to start your stay.",
@@ -315,8 +315,8 @@ export const translations = {
     }
   },
   ar: {
-    title: "2S1M RENT CAR — تأجير سيارات فاخرة في تطوان",
-    description: "وكالة تأجير سيارات في تطوان. سيارات حديثة وموثوقة وبأسعار معقولة.",
+    title: "تأجير سيارات تطوان - Rent Car Tetouan | 2S1M",
+    description: "تأجير سيارات في تطوان مع Rent Car Tetouan. سيارات حديثة، تسليم مجاني في المطار وأفضل الأسعار في المغرب. احجز سيارتك عبر الإنترنت اليوم!",
     hero: {
       intro: "شريكك المثالي لتأجير السيارات في تطوان",
       btnContact: "اتصل بنا",
@@ -396,8 +396,8 @@ export const translations = {
     },
     airports: {
       tangier: {
-        seoTitle: "تأجير سيارات مطار طنجة ابن بطوطة (TNG) | 2S1M",
-        seoDesc: "خدمة توصيل السيارات في مطار طنجة لرحلاتك إلى تطوان. الراحة والسرعة والأسعار التنافسية.",
+        seoTitle: "تأجير سيارات مطار طنجة - Rent Car Tetouan | 2S1M",
+        seoDesc: "خدمة توصيل السيارات في مطار طنجة لرحلاتك إلى تطوان. الراحة والسرعة وأفضل الأسعار مع Rent Car Tetouan.",
         h1: "تأجير السيارات في مطار طنجة",
         h2: "ابن بطوطة (TNG)",
         p: "هبط في طنجة وسافر مباشرة إلى تطوان مع 2S1M. نقوم بتسليم سيارتك في المطار لرحلة خالية من الإجهاد.",
@@ -407,8 +407,8 @@ export const translations = {
         feat4: "أسعار ثابتة مضمونة"
       },
       tetouan: {
-        seoTitle: "تأجير سيارات مطار تطوان سانية الرمل (TTU) | 2S1M",
-        seoDesc: "تأجير سيارات في مطار تطوان سانية الرمل. تسليم فوري عند الوصول. أفضل أسطول في تطوان.",
+        seoTitle: "تأجير سيارات مطار تطوان - Rent Car Tetouan | 2S1M",
+        seoDesc: "تأجير سيارات في مطار تطوان سانية الرمل. تسليم فوري عند الوصول. أفضل أسطول سيارات في تطوان مع Rent Car Tetouan.",
         h1: "تأجير السيارات في مطار تطوان",
         h2: "سانية الرمل (TTU)",
         p: "استلم سيارتك مباشرة بعد هبوطك من الطائرة في مطار تطوان. خدمة سريعة وفعالة وبدون انتظار لبدء إقامتك.",

@@ -45,6 +45,7 @@ export function Hero() {
           <FadeIn delay={200}>
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter text-white drop-shadow-2xl">
               2S1M <span className="gradient-orange-text">RENT CAR</span>
+              <span className="sr-only"> - Alquiler de coches Tetuán - Rent Car Tetouan</span>
             </h1>
           </FadeIn>
           <FadeIn delay={300}>

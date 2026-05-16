@@ -26,7 +26,7 @@ export const Route = createRootRoute({
       meta: [
         { charSet: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { title: "2S1M RENT CAR — Location de voitures premium à Tétouan" },
+        { title: "Alquiler de Coches Tetuán - Rent Car Tetouan | 2S1M" },
         { name: "description", content: "Agence de location de voitures à Tétouan. Véhicules modernes, fiables et accessibles." },
         { property: "og:type", content: "website" },
       ],

@@ -17,6 +17,8 @@ export const Route = createFileRoute("/$lang/airports/tangier")({
       meta: [
         { title: t.airports.tangier.seoTitle },
         { name: "description", content: t.airports.tangier.seoDesc },
+        { property: "og:title", content: t.airports.tangier.seoTitle },
+        { property: "og:description", content: t.airports.tangier.seoDesc },
       ],
     };
   }

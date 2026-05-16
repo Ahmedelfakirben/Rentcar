@@ -137,7 +137,7 @@ export function Cars() {
     <section id="voitures" className="pt-32 pb-16 sm:pt-40 sm:pb-20 lg:pt-48 lg:pb-28 relative overflow-hidden">
       <div className="absolute inset-0 z-0 bg-[#0B1D2A]">
         <img 
-          src="/flota.png" 
+          src="/nuestroscoches.jpg" 
           alt="2S1M Rent Car Fleet Background" 
           className="w-full h-full object-cover opacity-60"
         />
@@ -195,7 +195,7 @@ export function Cars() {
                   <div className="relative aspect-[16/10] overflow-hidden bg-secondary/20 shrink-0">
                     <img
                       src={car.img}
-                      alt={car.name}
+                      alt={`${car.name} - Rent Car Tetouan`}
                       loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
@@ -263,7 +263,7 @@ export function Cars() {
 
                 <div className="flex-1 relative z-10 flex items-center justify-center p-4">
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-                    <img src={activeImage || selectedCar.img} alt={selectedCar.name} className="w-full h-full object-cover" />
+                    <img src={activeImage || selectedCar.img} alt={`${selectedCar.name} - Rent Car Tetouan`} className="w-full h-full object-cover" />
                   </div>
                   <div className="absolute top-8 left-8 flex flex-col gap-2">
                     <span className="px-4 py-2 text-xs font-black tracking-widest uppercase bg-orange text-white rounded-xl shadow-xl shadow-orange/40">

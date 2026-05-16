@@ -69,7 +69,7 @@ export function About() {
               <div className="relative z-10 p-12 lg:p-20 bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 rounded-[3rem] backdrop-blur-3xl flex items-center justify-center">
                 <img 
                   src={logo} 
-                  alt="2S1M Luxury Car Rental" 
+                  alt="2S1M Rent Car Tetouan - Alquiler de coches premium" 
                   className="w-full h-auto max-w-[260px] drop-shadow-[0_0_50px_rgba(255,153,0,0.15)] animate-float" 
                 />
               </div>
