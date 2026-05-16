@@ -19,8 +19,8 @@ export function FooterLinks() {
     {
       title: t.footer.airports,
       links: [
-        { to: "/$lang/airports/tetouan", label: t.nav.airportTetouan },
-        { to: "/$lang/airports/tangier", label: t.nav.airportTangier },
+        { to: "/$lang/location-voiture-aeroport-tetouan", label: t.nav.airportTetouan },
+        { to: "/$lang/location-voiture-aeroport-tanger", label: t.nav.airportTangier },
       ]
     }
   ];

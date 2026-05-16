@@ -3,7 +3,7 @@ export const translations = {
     title: "Location de Voiture Tétouan - Rent Car Tétouan | 2S1M",
     description: "Location de voiture à Tétouan avec Rent Car Tétouan (2S1M). Véhicules modernes, livraison gratuite à l'aéroport et tarifs imbattables. Réservez votre voiture dès maintenant !",
     hero: {
-      intro: "VOTRE PARTENAIRE DE LOCATION PREMIUM À TÉTOUAN",
+      intro: "Location de Voitures VIP à Tétouan et Aéroport de Tanger",
       btnContact: "Nous contacter",
       btnCars: "Voir nos voitures"
     },
@@ -19,7 +19,7 @@ export const translations = {
     },
     about: {
       tag: "L'Excellence à Tétouan",
-      title: "Qui sommes-nous",
+      title: "Service de Location de Voiture Premium à Tétouan",
       desc: "Plus qu'une agence de location, 2S1M est votre partenaire de confiance pour une mobilité sereine et prestigieuse au Nord du Maroc. Notre mission est de transformer chaque trajet en une expérience fluide, confortable et haut de gamme.",
       pillar1: "Flotte Sélectionnée",
       pillar1Desc: "Des véhicules récents, entretenus avec rigueur pour votre sécurité.",
@@ -31,7 +31,7 @@ export const translations = {
       pillar4Desc: "Nous livrons votre véhicule partout au Maroc sur simple demande."
     },
     fleet: {
-      title: "Notre flotte",
+      title: "Meilleures Offres de Location de Voiture à Tétouan",
       subtitle: "Nos voitures",
       description: "Une sélection de véhicules modernes et fiables, à partir de 250 DH / jour.",
       perDay: "DH / jour",
@@ -81,9 +81,9 @@ export const translations = {
     },
     airports: {
       tangier: {
-        seoTitle: "Location de Voiture Aéroport de Tanger - Rent Car Tétouan | 2S1M",
-        seoDesc: "Alquiler de coches en el aeropuerto de Tánger (TNG) con entrega rápida para viajar a Tetuán. Rent Car Tetouan le ofrece confort, seguridad y precios bajos.",
-        h1: "Location de voiture à l'Aéroport de Tanger",
+        seoTitle: "Location de Voiture VIP Aéroport de Tanger - Rent Car Tétouan",
+        seoDesc: "Location de voiture VIP à l'aéroport de Tanger (TNG). Livraison rapide, véhicules premium et service 24/7 pour votre séjour à Tétouan.",
+        h1: "Location de Voiture VIP à l'Aéroport de Tanger",
         h2: "Ibn Battouta (TNG)",
         p: "Atterrissez à Tanger et partez directement vers Tétouan avec 2S1M. Nous vous livrons votre véhicule à l'aéroport pour un transfert en toute sérénité.",
         feat1: "Transfert Tanger-Tétouan",
@@ -92,9 +92,9 @@ export const translations = {
         feat4: "Prix fixes garantis"
       },
       tetouan: {
-        seoTitle: "Location de Voiture Aéroport de Tétouan - Rent Car Tétouan | 2S1M",
-        seoDesc: "Alquiler de coches en el aeropuerto de Tetuán Sania Ramel. Entrega inmediata a su llegada. La mejor flota de coches en Tetuán con Rent Car Tetouan.",
-        h1: "Location de voiture à l'Aéroport de Tétouan",
+        seoTitle: "Location de Voiture VIP Aéroport de Tétouan - Rent Car Tétouan",
+        seoDesc: "Location de voiture VIP à l'aéroport de Tétouan Sania Ramel. Livraison immédiate et véhicules récents avec Rent Car Tétouan.",
+        h1: "Location de Voiture VIP à l'Aéroport de Tétouan",
         h2: "Sania Ramel (TTU)",
         p: "Récupérez votre voiture dès votre descente d'avion à l'aéroport de Tétouan. Un service rapide, efficace et sans attente pour commencer votre séjour.",
         feat1: "Livraison Immédiate",
@@ -136,7 +136,7 @@ export const translations = {
       pillar4Desc: "Entregamos su vehículo en cualquier parte de Marruecos a su petición."
     },
     fleet: {
-      title: "Nuestra flota",
+      title: "Mejores Ofertas de Alquiler de Coches en Tetuán",
       subtitle: "Nuestros coches",
       description: "Una selección de vehículos modernos y fiables, desde 250 DH / día.",
       perDay: "DH / día",
@@ -186,9 +186,9 @@ export const translations = {
     },
     airports: {
       tangier: {
-        seoTitle: "Alquiler de Coches Aeropuerto de Tánger - Rent Car Tetouan | 2S1M",
-        seoDesc: "Servicio de entrega de coches en el aeropuerto de Tánger para sus viajes a Tetuán. Confort, rapidez y los mejores precios con Rent Car Tetouan.",
-        h1: "Alquiler de coches en el Aeropuerto de Tánger",
+        seoTitle: "Alquiler de Coches VIP Aeropuerto de Tánger - Rent Car Tetouan",
+        seoDesc: "Alquiler de coches VIP en el aeropuerto de Tánger (TNG). Entrega rápida, vehículos premium y servicio 24/7 para su estancia en Tetuán.",
+        h1: "Alquiler de Coches VIP en el Aeropuerto de Tánger",
         h2: "Ibn Battouta (TNG)",
         p: "Aterrice en Tánger y viaje directamente a Tetuán con 2S1M. Le entregamos su vehículo en el aeropuerto para un traslado sin estrés.",
         feat1: "Traslado Tánger-Tetuán",
@@ -197,9 +197,9 @@ export const translations = {
         feat4: "Precios fijos garantizados"
       },
       tetouan: {
-        seoTitle: "Alquiler de Coches Aeropuerto de Tetuán - Rent Car Tetouan | 2S1M",
-        seoDesc: "Alquiler de coches en el aeropuerto de Tetuán Sania Ramel. Entrega inmediata a su llegada. La flota más moderna de Tetuán con Rent Car Tetouan.",
-        h1: "Alquiler de coches en el Aeropuerto de Tetuán",
+        seoTitle: "Alquiler de Coches VIP Aeropuerto de Tetuán - Rent Car Tetouan",
+        seoDesc: "Alquiler de coches VIP en el aeropuerto de Tetuán Sania Ramel. Entrega inmediata y vehículos modernos con Rent Car Tetouan.",
+        h1: "Alquiler de Coches VIP en el Aeropuerto de Tetuán",
         h2: "Sania Ramel (TTU)",
         p: "Recoja su coche nada más bajar del avión en el aeropuerto de Tetuán. Un servicio rápido, eficaz y sin esperas para comenzar su estancia.",
         feat1: "Entrega Inmediata",
@@ -213,7 +213,7 @@ export const translations = {
     title: "Car Rental Tetouan - Rent Car Tetouan | 2S1M",
     description: "Car rental in Tetouan with Rent Car Tetouan (2S1M). Modern vehicles, free airport delivery, and the most competitive rates in Morocco. Book your car online today!",
     hero: {
-      intro: "YOUR PREMIUM RENTAL PARTNER IN TETOUAN",
+      intro: "VIP Car Rental in Tetouan and Tangier Airport",
       btnContact: "Contact us",
       btnCars: "View our cars"
     },
@@ -229,7 +229,7 @@ export const translations = {
     },
     about: {
       tag: "Excellence in Tetouan",
-      title: "About Us",
+      title: "Premium Car Rental Service in Tetouan",
       desc: "More than just a rental agency, 2S1M is your trusted partner for peaceful and prestigious mobility in Northern Morocco. Our mission is to transform every journey into a seamless, comfortable, and high-end experience.",
       pillar1: "Selected Fleet",
       pillar1Desc: "Recent vehicles, rigorously maintained for your safety.",
@@ -241,7 +241,7 @@ export const translations = {
       pillar4Desc: "We deliver your vehicle anywhere in Morocco upon request."
     },
     fleet: {
-      title: "Our Fleet",
+      title: "Best Car Rental Offers in Tetouan",
       subtitle: "Our Cars",
       description: "A selection of modern and reliable vehicles, starting from 250 DH / day.",
       perDay: "DH / day",
@@ -318,7 +318,7 @@ export const translations = {
     title: "تأجير سيارات تطوان - Rent Car Tetouan | 2S1M",
     description: "تأجير سيارات في تطوان مع Rent Car Tetouan. سيارات حديثة، تسليم مجاني في المطار وأفضل الأسعار في المغرب. احجز سيارتك عبر الإنترنت اليوم!",
     hero: {
-      intro: "شريكك المثالي لتأجير السيارات في تطوان",
+      intro: "تأجير سيارات VIP في تطوان ومطار طنجة",
       btnContact: "اتصل بنا",
       btnCars: "عرض سياراتنا"
     },
@@ -334,7 +334,7 @@ export const translations = {
     },
     about: {
       tag: "التميز في تطوان",
-      title: "من نحن",
+      title: "خدمة تأجير سيارات متميزة في تطوان",
       desc: "أكثر من مجرد وكالة تأجير، 2S1M هي شريكك الموثوق لتنقل هادئ ومرموق في شمال المغرب. مهمتنا هي تحويل كل رحلة إلى تجربة سلسة ومريحة وراقية.",
       pillar1: "أسطول مختار",
       pillar1Desc: "سيارات حديثة، تتم صيانتها بدقة لسلامتكم.",
@@ -346,7 +346,7 @@ export const translations = {
       pillar4Desc: "نقوم بتوصيل سيارتك إلى أي مكان في المغرب بناءً على طلبك."
     },
     fleet: {
-      title: "أسطولنا",
+      title: "أفضل عروض تأجير السيارات في تطوان",
       subtitle: "سياراتنا",
       description: "مجموعة مختارة من السيارات الحديثة والموثوقة، تبدأ من 250 درهم / يوم.",
       perDay: "درهم / يوم",

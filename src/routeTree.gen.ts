@@ -13,11 +13,11 @@ import { Route as LangRouteImport } from './routes/$lang'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as LangIndexRouteImport } from './routes/$lang.index'
 import { Route as LangOffersRouteImport } from './routes/$lang.offers'
+import { Route as LangLocationVoitureAeroportTetouanRouteImport } from './routes/$lang.location-voiture-aeroport-tetouan'
+import { Route as LangLocationVoitureAeroportTangerRouteImport } from './routes/$lang.location-voiture-aeroport-tanger'
 import { Route as LangFleetRouteImport } from './routes/$lang.fleet'
 import { Route as LangContactRouteImport } from './routes/$lang.contact'
 import { Route as LangAboutRouteImport } from './routes/$lang.about'
-import { Route as LangAirportsTetouanRouteImport } from './routes/$lang.airports.tetouan'
-import { Route as LangAirportsTangierRouteImport } from './routes/$lang.airports.tangier'
 
 const LangRoute = LangRouteImport.update({
   id: '/$lang',
@@ -39,6 +39,18 @@ const LangOffersRoute = LangOffersRouteImport.update({
   path: '/offers',
   getParentRoute: () => LangRoute,
 } as any)
+const LangLocationVoitureAeroportTetouanRoute =
+  LangLocationVoitureAeroportTetouanRouteImport.update({
+    id: '/location-voiture-aeroport-tetouan',
+    path: '/location-voiture-aeroport-tetouan',
+    getParentRoute: () => LangRoute,
+  } as any)
+const LangLocationVoitureAeroportTangerRoute =
+  LangLocationVoitureAeroportTangerRouteImport.update({
+    id: '/location-voiture-aeroport-tanger',
+    path: '/location-voiture-aeroport-tanger',
+    getParentRoute: () => LangRoute,
+  } as any)
 const LangFleetRoute = LangFleetRouteImport.update({
   id: '/fleet',
   path: '/fleet',
@@ -54,16 +66,6 @@ const LangAboutRoute = LangAboutRouteImport.update({
   path: '/about',
   getParentRoute: () => LangRoute,
 } as any)
-const LangAirportsTetouanRoute = LangAirportsTetouanRouteImport.update({
-  id: '/airports/tetouan',
-  path: '/airports/tetouan',
-  getParentRoute: () => LangRoute,
-} as any)
-const LangAirportsTangierRoute = LangAirportsTangierRouteImport.update({
-  id: '/airports/tangier',
-  path: '/airports/tangier',
-  getParentRoute: () => LangRoute,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -71,20 +73,20 @@ export interface FileRoutesByFullPath {
   '/$lang/about': typeof LangAboutRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/fleet': typeof LangFleetRoute
+  '/$lang/location-voiture-aeroport-tanger': typeof LangLocationVoitureAeroportTangerRoute
+  '/$lang/location-voiture-aeroport-tetouan': typeof LangLocationVoitureAeroportTetouanRoute
   '/$lang/offers': typeof LangOffersRoute
   '/$lang/': typeof LangIndexRoute
-  '/$lang/airports/tangier': typeof LangAirportsTangierRoute
-  '/$lang/airports/tetouan': typeof LangAirportsTetouanRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/$lang/about': typeof LangAboutRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/fleet': typeof LangFleetRoute
+  '/$lang/location-voiture-aeroport-tanger': typeof LangLocationVoitureAeroportTangerRoute
+  '/$lang/location-voiture-aeroport-tetouan': typeof LangLocationVoitureAeroportTetouanRoute
   '/$lang/offers': typeof LangOffersRoute
   '/$lang': typeof LangIndexRoute
-  '/$lang/airports/tangier': typeof LangAirportsTangierRoute
-  '/$lang/airports/tetouan': typeof LangAirportsTetouanRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -93,10 +95,10 @@ export interface FileRoutesById {
   '/$lang/about': typeof LangAboutRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/fleet': typeof LangFleetRoute
+  '/$lang/location-voiture-aeroport-tanger': typeof LangLocationVoitureAeroportTangerRoute
+  '/$lang/location-voiture-aeroport-tetouan': typeof LangLocationVoitureAeroportTetouanRoute
   '/$lang/offers': typeof LangOffersRoute
   '/$lang/': typeof LangIndexRoute
-  '/$lang/airports/tangier': typeof LangAirportsTangierRoute
-  '/$lang/airports/tetouan': typeof LangAirportsTetouanRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -106,20 +108,20 @@ export interface FileRouteTypes {
     | '/$lang/about'
     | '/$lang/contact'
     | '/$lang/fleet'
+    | '/$lang/location-voiture-aeroport-tanger'
+    | '/$lang/location-voiture-aeroport-tetouan'
     | '/$lang/offers'
     | '/$lang/'
-    | '/$lang/airports/tangier'
-    | '/$lang/airports/tetouan'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/$lang/about'
     | '/$lang/contact'
     | '/$lang/fleet'
+    | '/$lang/location-voiture-aeroport-tanger'
+    | '/$lang/location-voiture-aeroport-tetouan'
     | '/$lang/offers'
     | '/$lang'
-    | '/$lang/airports/tangier'
-    | '/$lang/airports/tetouan'
   id:
     | '__root__'
     | '/'
@@ -127,10 +129,10 @@ export interface FileRouteTypes {
     | '/$lang/about'
     | '/$lang/contact'
     | '/$lang/fleet'
+    | '/$lang/location-voiture-aeroport-tanger'
+    | '/$lang/location-voiture-aeroport-tetouan'
     | '/$lang/offers'
     | '/$lang/'
-    | '/$lang/airports/tangier'
-    | '/$lang/airports/tetouan'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -168,6 +170,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LangOffersRouteImport
       parentRoute: typeof LangRoute
     }
+    '/$lang/location-voiture-aeroport-tetouan': {
+      id: '/$lang/location-voiture-aeroport-tetouan'
+      path: '/location-voiture-aeroport-tetouan'
+      fullPath: '/$lang/location-voiture-aeroport-tetouan'
+      preLoaderRoute: typeof LangLocationVoitureAeroportTetouanRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/location-voiture-aeroport-tanger': {
+      id: '/$lang/location-voiture-aeroport-tanger'
+      path: '/location-voiture-aeroport-tanger'
+      fullPath: '/$lang/location-voiture-aeroport-tanger'
+      preLoaderRoute: typeof LangLocationVoitureAeroportTangerRouteImport
+      parentRoute: typeof LangRoute
+    }
     '/$lang/fleet': {
       id: '/$lang/fleet'
       path: '/fleet'
@@ -189,20 +205,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LangAboutRouteImport
       parentRoute: typeof LangRoute
     }
-    '/$lang/airports/tetouan': {
-      id: '/$lang/airports/tetouan'
-      path: '/airports/tetouan'
-      fullPath: '/$lang/airports/tetouan'
-      preLoaderRoute: typeof LangAirportsTetouanRouteImport
-      parentRoute: typeof LangRoute
-    }
-    '/$lang/airports/tangier': {
-      id: '/$lang/airports/tangier'
-      path: '/airports/tangier'
-      fullPath: '/$lang/airports/tangier'
-      preLoaderRoute: typeof LangAirportsTangierRouteImport
-      parentRoute: typeof LangRoute
-    }
   }
 }
 
@@ -210,20 +212,22 @@ interface LangRouteChildren {
   LangAboutRoute: typeof LangAboutRoute
   LangContactRoute: typeof LangContactRoute
   LangFleetRoute: typeof LangFleetRoute
+  LangLocationVoitureAeroportTangerRoute: typeof LangLocationVoitureAeroportTangerRoute
+  LangLocationVoitureAeroportTetouanRoute: typeof LangLocationVoitureAeroportTetouanRoute
   LangOffersRoute: typeof LangOffersRoute
   LangIndexRoute: typeof LangIndexRoute
-  LangAirportsTangierRoute: typeof LangAirportsTangierRoute
-  LangAirportsTetouanRoute: typeof LangAirportsTetouanRoute
 }
 
 const LangRouteChildren: LangRouteChildren = {
   LangAboutRoute: LangAboutRoute,
   LangContactRoute: LangContactRoute,
   LangFleetRoute: LangFleetRoute,
+  LangLocationVoitureAeroportTangerRoute:
+    LangLocationVoitureAeroportTangerRoute,
+  LangLocationVoitureAeroportTetouanRoute:
+    LangLocationVoitureAeroportTetouanRoute,
   LangOffersRoute: LangOffersRoute,
   LangIndexRoute: LangIndexRoute,
-  LangAirportsTangierRoute: LangAirportsTangierRoute,
-  LangAirportsTetouanRoute: LangAirportsTetouanRoute,
 }
 
 const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)
