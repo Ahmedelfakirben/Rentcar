@@ -9,7 +9,7 @@ export function LocalBusinessJSONLD() {
     "name": "2S1M RENT CAR",
     "alternateName": ["Rent Car Tetouan", "2S1M Alquiler de Coches"],
     "description": t.description,
-    "url": "https://2s1mrentcar.com", // Fallback URL, should be updated to actual domain
+    "url": `https://rentcartetouan.ma/${lang}`,
     "telephone": "+212660292821",
     "email": "2s1mrentcartetouan@gmail.com",
     "priceRange": "250DH - 1000DH",
