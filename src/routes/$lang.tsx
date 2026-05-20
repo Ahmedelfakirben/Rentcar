@@ -23,6 +23,14 @@ export const Route = createFileRoute('/$lang')({
         { property: "og:title", content: t.title },
         { property: "og:description", content: t.description },
       ],
+      links: [
+        { rel: "canonical", href: `https://rentcartetouan.ma/${lang}` },
+        { rel: "alternate", hreflang: "es", href: "https://rentcartetouan.ma/es" },
+        { rel: "alternate", hreflang: "fr", href: "https://rentcartetouan.ma/fr" },
+        { rel: "alternate", hreflang: "en", href: "https://rentcartetouan.ma/en" },
+        { rel: "alternate", hreflang: "ar", href: "https://rentcartetouan.ma/ar" },
+        { rel: "alternate", hreflang: "x-default", href: "https://rentcartetouan.ma/" },
+      ],
     };
   },
   component: LanguageLayout,

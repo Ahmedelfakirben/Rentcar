@@ -20,6 +20,14 @@ export const Route = createFileRoute("/$lang/location-voiture-aeroport-tetouan")
         { property: "og:title", content: t.airports.tetouan.seoTitle },
         { property: "og:description", content: t.airports.tetouan.seoDesc },
       ],
+      links: [
+        { rel: "canonical", href: `https://rentcartetouan.ma/${lang}/location-voiture-aeroport-tetouan` },
+        { rel: "alternate", hreflang: "es", href: "https://rentcartetouan.ma/es/location-voiture-aeroport-tetouan" },
+        { rel: "alternate", hreflang: "fr", href: "https://rentcartetouan.ma/fr/location-voiture-aeroport-tetouan" },
+        { rel: "alternate", hreflang: "en", href: "https://rentcartetouan.ma/en/location-voiture-aeroport-tetouan" },
+        { rel: "alternate", hreflang: "ar", href: "https://rentcartetouan.ma/ar/location-voiture-aeroport-tetouan" },
+        { rel: "alternate", hreflang: "x-default", href: "https://rentcartetouan.ma/fr/location-voiture-aeroport-tetouan" },
+      ],
     };
   }
 });

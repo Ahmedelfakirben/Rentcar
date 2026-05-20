@@ -8,47 +8,149 @@
   </url>
   <url>
     <loc>https://rentcartetouan.ma/fr</loc>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://rentcartetouan.ma/en</loc>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://rentcartetouan.ma/ar</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- About Pages -->
+  <url>
+    <loc>https://rentcartetouan.ma/es/about</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/fr/about</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/en/about</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/ar/about</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Contact Pages -->
+  <url>
+    <loc>https://rentcartetouan.ma/es/contact</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/fr/contact</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/en/contact</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/ar/contact</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Fleet (Cars) Pages -->
+  <url>
+    <loc>https://rentcartetouan.ma/es/fleet</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/fr/fleet</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/en/fleet</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/ar/fleet</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
-  <!-- Airport Pages (Spanish) -->
+  <!-- Offers Pages -->
   <url>
-    <loc>https://rentcartetouan.ma/es/location-voiture-aeroport-tanger</loc>
+    <loc>https://rentcartetouan.ma/es/offers</loc>
     <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://rentcartetouan.ma/es/location-voiture-aeroport-tetouan</loc>
+    <loc>https://rentcartetouan.ma/fr/offers</loc>
     <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/en/offers</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/ar/offers</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
-  <!-- Airport Pages (French) -->
+  <!-- Airport Tangier Pages -->
+  <url>
+    <loc>https://rentcartetouan.ma/es/location-voiture-aeroport-tanger</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
   <url>
     <loc>https://rentcartetouan.ma/fr/location-voiture-aeroport-tanger</loc>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/en/location-voiture-aeroport-tanger</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/ar/location-voiture-aeroport-tanger</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Airport Tetouan Pages -->
+  <url>
+    <loc>https://rentcartetouan.ma/es/location-voiture-aeroport-tetouan</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://rentcartetouan.ma/fr/location-voiture-aeroport-tetouan</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Subpages (Spanish) -->
-  <url>
-    <loc>https://rentcartetouan.ma/es/about</loc>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://rentcartetouan.ma/es/contact</loc>
-    <priority>0.5</priority>
+    <loc>https://rentcartetouan.ma/en/location-voiture-aeroport-tetouan</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://rentcartetouan.ma/ar/location-voiture-aeroport-tetouan</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>
