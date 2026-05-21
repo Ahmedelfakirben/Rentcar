@@ -2,10 +2,42 @@ import logo from "@/assets/logo.svg";
 import { FadeIn } from "@/components/FadeIn";
 import { useTranslation } from "@/lib/useTranslation";
 import { ShieldCheck, Clock, Award, Map } from "lucide-react";
+import { useRef, useEffect } from "react";
 
 export function About() {
   const { lang, t } = useTranslation();
   const c = t.about;
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Establecer volumen al 70%
+    video.volume = 0.7;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {
+            // Fallback: si el navegador bloquea la reproducción automática con sonido,
+            // intentamos reproducir silenciado.
+            video.muted = true;
+            video.play().catch(e => console.log("Muted autoplay failed:", e));
+          });
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(video);
+
+    return () => {
+      observer.unobserve(video);
+    };
+  }, []);
 
   return (
     <section id="about" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-black">
@@ -63,21 +95,29 @@ export function About() {
             </div>
           </div>
 
-          {/* Right Side: Visual Branding */}
-          <div className="relative">
-            <FadeIn delay={500}>
-              <div className="relative z-10 p-12 lg:p-20 bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 rounded-[3rem] backdrop-blur-3xl flex items-center justify-center">
-                <img 
-                  src={logo} 
-                  alt="2S1M Rent Car Tetouan - Alquiler de coches premium" 
-                  className="w-full h-auto max-w-[260px] drop-shadow-[0_0_50px_rgba(255,153,0,0.15)] animate-float" 
-                />
+          {/* Right Side: Visual Branding with Vertical Promo Video */}
+          <div className="relative flex justify-center items-center w-full">
+            <FadeIn delay={500} className="relative w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[420px] mx-auto">
+              {/* Glassmorphic Video Card Container (Vertical 9:16) */}
+              <div className="relative z-10 p-3 bg-gradient-to-br from-white/[0.03] to-transparent border border-white/10 rounded-[2.5rem] sm:rounded-[3.5rem] backdrop-blur-3xl overflow-hidden shadow-2xl">
+                <div className="relative rounded-[1.8rem] sm:rounded-[2.8rem] overflow-hidden aspect-[9/16] bg-black/60 group">
+                  <video
+                    ref={videoRef}
+                    src="/promo.mp4"
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                  />
+                  {/* Premium overlay border inside */}
+                  <div className="absolute inset-0 pointer-events-none border border-white/5 rounded-[1.8rem] sm:rounded-[2.8rem]" />
+                </div>
               </div>
+
+              {/* Decorative Card behind */}
+              <div className="absolute -top-4 -right-4 w-full h-full border border-orange/20 rounded-[2.5rem] sm:rounded-[3.5rem] z-0 pointer-events-none" />
+              <div className="absolute -bottom-4 -left-4 w-full h-full border border-white/5 rounded-[2.5rem] sm:rounded-[3.5rem] z-0 pointer-events-none" />
             </FadeIn>
-            
-            {/* Decorative Card behind */}
-            <div className="absolute -top-6 -right-6 w-full h-full border border-orange/20 rounded-[3rem] z-0" />
-            <div className="absolute -bottom-6 -left-6 w-full h-full border border-white/10 rounded-[3rem] z-0" />
           </div>
         </div>
       </div>
