@@ -14,7 +14,7 @@ export function Hero() {
         preload="auto"
         className="absolute inset-0 h-full w-full object-cover opacity-90 will-change-transform"
       >
-        <source src="/contact-bg.mp4" type="video/mp4" />
+        <source src="/heroshot.mp4" type="video/mp4" />
       </video>
       {/* Ultra-light gradient overlay for legibility only */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60 z-0" />

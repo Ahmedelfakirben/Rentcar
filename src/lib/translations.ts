@@ -50,7 +50,7 @@ export const translations = {
       title: "Localisation",
       city: "Tétouan, Maroc",
       address: "RUE 14 AV MOHAMED BENOUNA, QUARTIER BOUJARAH, TÉTOUAN",
-      hours: "Lun - Dim: 08:00 - 22:00",
+      hours: "Lun - Dim: 24h/24h",
       service: "Service Aéroport 24h/7j"
     },
     contact: {
@@ -155,7 +155,7 @@ export const translations = {
       title: "Localización",
       city: "Tetuán, Marruecos",
       address: "RUE 14 AV MOHAMED BENOUNA, QUARTIER BOUJARAH, TETUÁN",
-      hours: "Lun - Dom: 08:00 - 22:00",
+      hours: "Lun - Dom: 24h/24h",
       service: "Servicio Aeropuerto 24h/7d"
     },
     contact: {
@@ -260,7 +260,7 @@ export const translations = {
       title: "Location",
       city: "Tetouan, Morocco",
       address: "RUE 14 AV MOHAMED BENOUNA, QUARTIER BOUJARAH, TETOUAN",
-      hours: "Mon - Sun: 08:00 - 22:00",
+      hours: "Mon - Sun: 24h/24h",
       service: "Airport Service 24/7"
     },
     contact: {
@@ -365,7 +365,7 @@ export const translations = {
       title: "الموقع",
       city: "تطوان، المغرب",
       address: "شارع 14، شارع محمد بنونة، حي بوجراح، تطوان",
-      hours: "الاثنين - الأحد: 08:00 - 22:00",
+      hours: "الاثنين - الأحد: 24h/24h",
       service: "خدمة المطار 24/7"
     },
     contact: {

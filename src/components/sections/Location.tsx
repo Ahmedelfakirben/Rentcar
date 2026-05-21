@@ -70,7 +70,7 @@ export function Location() {
             <div className="rounded-[1.5rem] sm:rounded-[3rem] overflow-hidden border border-white/5 shadow-2xl aspect-video lg:aspect-auto lg:h-full min-h-[250px] sm:min-h-[400px] relative bg-black w-full">
               <iframe
                 title="Localisation 2S1M Rent Car"
-                src="https://maps.google.com/maps?q=2S1M%20Rent%20Car@35.5926936,-5.3507613&t=m&z=17&output=embed"
+                src="https://maps.google.com/maps?q=2S1M%20RENT%20CAR%20T%C3%A9touan&t=m&z=17&output=embed"
                 className="w-full h-full opacity-90 contrast-[1.1] saturate-[1.2]"
                 loading="lazy"
               />

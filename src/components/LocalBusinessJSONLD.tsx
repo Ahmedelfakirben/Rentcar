@@ -36,8 +36,8 @@ export function LocalBusinessJSONLD() {
           "Saturday",
           "Sunday"
         ],
-        "opens": "08:00",
-        "closes": "22:00"
+        "opens": "00:00",
+        "closes": "23:59"
       }
     ],
     "sameAs": [
