@@ -1,30 +1,29 @@
 import logo from "@/assets/logo.svg";
 import { FadeIn } from "@/components/FadeIn";
 import { useTranslation } from "@/lib/useTranslation";
-import { ShieldCheck, Clock, Award, Map } from "lucide-react";
-import { useRef, useEffect } from "react";
+import { ShieldCheck, Clock, Award, Map, Volume2, VolumeX } from "lucide-react";
+import { useRef, useEffect, useState } from "react";
 
 export function About() {
   const { lang, t } = useTranslation();
   const c = t.about;
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    // Establecer volumen al 70%
+    // iOS Safari requires muted=true from the HTML attribute to allow autoplay.
+    // We start muted and let the user unmute via the button.
     video.volume = 0.7;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          video.play().catch(() => {
-            // Fallback: si el navegador bloquea la reproducción automática con sonido,
-            // intentamos reproducir silenciado.
-            video.muted = true;
-            video.play().catch(e => console.log("Muted autoplay failed:", e));
-          });
+          // Always play muted first (works on iOS)
+          video.muted = true;
+          video.play().catch(e => console.log("Autoplay failed:", e));
         } else {
           video.pause();
         }
@@ -38,6 +37,15 @@ export function About() {
       observer.unobserve(video);
     };
   }, []);
+
+  const toggleSound = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    const newMuted = !isMuted;
+    video.muted = newMuted;
+    if (!newMuted) video.volume = 0.7;
+    setIsMuted(newMuted);
+  };
 
   return (
     <section id="about" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-black">
@@ -104,11 +112,20 @@ export function About() {
                   <video
                     ref={videoRef}
                     src="/promo.mp4"
-                    controls
+                    muted
                     playsInline
+                    loop
                     preload="metadata"
                     className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
                   />
+                  {/* Sound toggle button */}
+                  <button
+                    onClick={toggleSound}
+                    className="absolute bottom-4 right-4 z-20 w-10 h-10 rounded-full bg-black/60 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-orange/80 hover:border-orange transition-all duration-300"
+                    aria-label={isMuted ? 'Activar sonido' : 'Silenciar'}
+                  >
+                    {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+                  </button>
                   {/* Premium overlay border inside */}
                   <div className="absolute inset-0 pointer-events-none border border-white/5 rounded-[1.8rem] sm:rounded-[2.8rem]" />
                 </div>
